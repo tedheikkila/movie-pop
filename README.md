@@ -36,4 +36,4 @@ project-1-info folder contains requirements for project, group thoughts, etc
 
 <br>
 
-Check out the deployed application here: https://tedheikkila.github.io/movie-pop/
+Check out the deployed application here: 
