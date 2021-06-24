@@ -1,0 +1,40 @@
+.jumbotron {
+    background-color: darkblue;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    text-indent: 5mm;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.img-container {
+    display: flex;
+    justify-content: right;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: flex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#image {
+    border: 3px solid black;
+    justify-content: space-around;
+    width: 640px;
+    height: 350px;  
+}
+
+.search-container {
+    padding: 10px;
+    width: 200px;
+    height: 35px;
+    justify-content: left;
+    align-items: left;
+    background-color: beige;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
