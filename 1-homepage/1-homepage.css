@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;  
+    background-color: rgb(39, 35, 35);  
 }
 
 .jumbotron {
@@ -34,6 +35,19 @@ body {
     width:90%;
     margin-right:5%;
     margin-left:5%;
+}
+
+.footer {
+    background-color: rgb(247, 247, 103);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size:15px;
+    padding-top:20px;
+    
 }
 
 
