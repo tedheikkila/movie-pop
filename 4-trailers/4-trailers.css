@@ -46,10 +46,12 @@ body {
 
 #image {
     border: 3px solid black;
-    width: 640px;
-    height: 350px;  
+    width: 80%; 
     overflow: hidden;
     align-items: center;
     padding: 2px;
     position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
