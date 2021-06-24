@@ -14,22 +14,26 @@
         <h1>Trailers</h1>
     </header>
 
-    <div class="search-container">
-        <h2 class="search">Search by Movie: </h2>
-        <form>
-            <input name="movie-name" id="movie-name" placeholder="ex. Titanic" type="text" class="form-input" />
-            <!--add autofocus="true"??-->
-            <button id="search" class="btn">Search</button>
-        </form>
+    <div class="flex-container">   <!--Holds both search area and the viewing area-->
+        <div class="search-container">
+            <h2 class="search">Search by Movie: </h2>
+            <form>
+                <input name="movie-name" id="movie-name" placeholder="ex. Titanic" type="text" class="form-input" />
+                <!--add autofocus="true"??-->
+                <button id="search-btn" class="btn">Search</button>
+            </form>
+        </div>
+
+
+        <main>
+            <section> 
+                <div class="img-container"></div>
+                    <h2 class="click">Click on trailer below to start watching</h2>
+                    <div id="image"></div>
+            </section>
+        </main>
+
     </div>
-
-    <main>
-        <div class="img-container"></div>
-        <h2>Click on trailer below to start watching</h2>
-        <div id="image"></div>
-    </main>
-
-   
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./4-trailers.js"></script>
