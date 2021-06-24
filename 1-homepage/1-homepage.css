@@ -8,11 +8,32 @@ body {
     font-family: 'Poppins', sans-serif;    
 }
 
+.jumbotron {
+    height:230px;
+    background-color: rgb(247, 247, 103);
+}
+
 .header-movie-pop {
     text-align: center;
 }
 
 .display-3 {
+    margin-top:-20px;
     font-weight:bold;
 }
+
+.lead {
+    color:rgba(255, 0, 0, 0.849);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.deck-group {
+    text-align:center;
+    width:90%;
+    margin-right:5%;
+    margin-left:5%;
+}
+
+
 
