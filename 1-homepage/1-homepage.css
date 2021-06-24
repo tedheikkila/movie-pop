@@ -31,23 +31,45 @@ body {
 
 .deck-group {
     text-align:center;
-    margin-top:50px;
+    margin-top:80px;
     width:90%;
     margin-right:5%;
     margin-left:5%;
 }
 
+.card-title {
+    font-size:35px;
+}
+
+#search-button {
+    background-color:rgba(255, 0, 0, 0.849);
+    border:none;
+}
+
+#search-button:hover {
+    background-color: rgb(247, 247, 103);
+    cursor: pointer;
+    color:black
+}
+
+
+.input-group {
+    padding:20px;
+}
+
+.space {
+    margin-top: 50px;
+    padding:100px;
+}
+
+
 .footer {
     background-color: rgb(247, 247, 103);
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: black;
     text-align: center;
     font-size:15px;
-    padding-top:20px;
-    
+    padding:20px;
 }
-
-
