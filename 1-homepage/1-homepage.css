@@ -1,0 +1,18 @@
+/* group one 1, movie pop, 6-24-21 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;    
+}
+
+.header-movie-pop {
+    text-align: center;
+}
+
+.display-3 {
+    font-weight:bold;
+}
+
