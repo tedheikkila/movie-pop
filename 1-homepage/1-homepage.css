@@ -41,6 +41,11 @@ body {
     font-size:35px;
 }
 
+.card:hover {
+    box-shadow: 0 6px 15px 0 rgb(247, 247, 103), 0 6px 15px 0 rgb(247, 247, 103);
+
+}
+
 #search-button {
     background-color:rgba(255, 0, 0, 0.849);
     border:none;
@@ -72,4 +77,8 @@ body {
     text-align: center;
     font-size:15px;
     padding:20px;
+}
+
+.rights {
+    margin-top:15px;
 }
