@@ -8,11 +8,17 @@ let trailerInputEl = document.querySelector('#trailer-title');
 let locationInputEl = document.querySelector('#location-title');
 
 
+// goBackButton.addEventListener('click', homepage);
 
+
+// handles review click event
 var formReviewHandler = function (event) {
     console.log(event)
+    document.location.replace('../2-reviews/2-reviews.html');
+    // document.location.replace('../1-homepage/1-homepage.html')
 }
 
+// handles typed movie title for trailer
 var formTrailerHandler = function (event) {
     event.preventDefault();
   
@@ -27,6 +33,7 @@ var formTrailerHandler = function (event) {
     }
   };
 
+  // handles typed movie title for location 
   var formLocationHandler = function (event) {
     event.preventDefault();
   
@@ -40,6 +47,8 @@ var formTrailerHandler = function (event) {
       alert('Please enter a movie title');
     }
   };
+
+
 
 
 
