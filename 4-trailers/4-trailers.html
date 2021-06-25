@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./4-trailers.css" />
+    <title>movie-pop</title>
+</head>
+
+<body>
+    <header class="jumbotron">
+        <h1>Trailers</h1>
+    </header>
+
+    <div class="flex-container">   <!--Holds both search area and the viewing area-->
+        <div class="search-container">
+            <h2 class="search">Search by Movie: </h2>
+            <form>
+                <input name="movie-name" id="movie-name" placeholder="ex. Titanic" type="text" class="form-input" />
+                <!--add autofocus="true"??-->
+                <button id="search-btn" class="btn">Search</button>
+            </form>
+        </div>
+
+
+        <main>
+            <section> 
+                <div class="img-container"></div>
+                    <h2 class="click">Click on trailer below to start watching</h2>
+                    <div id="image" width=500 height=300></div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./4-trailers.js"></script>
+
+</body>
+
+</html>

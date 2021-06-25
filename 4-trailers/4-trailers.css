@@ -1,0 +1,57 @@
+.jumbotron {
+    background-color: darkblue;
+    color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    text-indent: 5mm;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+ }
+
+.search-container {
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(241, 241, 120);
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: -2%;
+    text-align: center;
+}
+
+.search {
+    line-height: 20px;
+    height: 20px;
+}
+
+.click {
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-top: 2%;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+} 
+
+#image {
+    border: 3px solid black;
+    width: 80%; 
+    overflow: hidden;
+    align-items: center;
+    padding: 2px;
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
