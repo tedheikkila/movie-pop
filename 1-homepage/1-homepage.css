@@ -1,4 +1,4 @@
-/* group one 1, movie pop, 6-24-21 */
+/* group one 1, movie pop, css for 1-homepage, 6-24-21 */
 
 * {
     box-sizing: border-box;
@@ -51,10 +51,17 @@ body {
     border:none;
 }
 
-#search-review-button:hover, #search-trailer-button, #search-location-button {
+#search-review-button:hover, #search-trailer-button:hover, #search-location-button:hover {
     background-color: rgb(247, 247, 103);
     cursor: pointer;
     color:black
+}
+
+#search-review-button {
+    text-align: center;
+    margin-top:-11%;
+    margin-left:25%;
+    margin-right:25%;
 }
 
 
