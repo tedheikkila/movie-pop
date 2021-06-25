@@ -1,0 +1,94 @@
+/* group one 1, movie pop, css for 1-homepage, 6-24-21 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;  
+    background-color: rgb(39, 35, 35);  
+}
+
+.jumbotron {
+    height:230px;
+    background-color: rgb(247, 247, 103);
+}
+
+.header-movie-pop {
+    text-align: center;
+}
+
+.display-3 {
+    margin-top:-20px;
+    font-weight:bold;
+}
+
+.lead {
+    color:rgba(255, 0, 0, 0.849);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.deck-group {
+    text-align:center;
+    margin-top:80px;
+    width:90%;
+    margin-right:5%;
+    margin-left:5%;
+}
+
+.card-title {
+    font-size:35px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px 0 rgb(247, 247, 103), 0 6px 10px 0 rgb(247, 247, 103);
+
+}
+
+#search-review-button, #search-trailer-button, #search-location-button {
+    background-color:rgba(255, 0, 0, 0.849);
+    border:none;
+}
+
+#search-review-button:hover, #search-trailer-button:hover, #search-location-button:hover {
+    background-color: rgb(247, 247, 103);
+    cursor: pointer;
+    color:black
+}
+
+#search-review-button {
+    text-align: center;
+    margin-top:-11%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+
+.input-group {
+    padding:20px;
+}
+
+.space {
+    margin-top: 50px;
+    padding:100px;
+}
+
+
+.footer {
+    background-color: rgb(247, 247, 103);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size:15px;
+    padding:20px;
+}
+
+.rights {
+    margin-top:15px;
+}
+
+
+
