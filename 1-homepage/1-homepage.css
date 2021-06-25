@@ -1,0 +1,75 @@
+/* group one 1, movie pop, 6-24-21 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;  
+    background-color: rgb(39, 35, 35);  
+}
+
+.jumbotron {
+    height:230px;
+    background-color: rgb(247, 247, 103);
+}
+
+.header-movie-pop {
+    text-align: center;
+}
+
+.display-3 {
+    margin-top:-20px;
+    font-weight:bold;
+}
+
+.lead {
+    color:rgba(255, 0, 0, 0.849);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.deck-group {
+    text-align:center;
+    margin-top:80px;
+    width:90%;
+    margin-right:5%;
+    margin-left:5%;
+}
+
+.card-title {
+    font-size:35px;
+}
+
+#search-button {
+    background-color:rgba(255, 0, 0, 0.849);
+    border:none;
+}
+
+#search-button:hover {
+    background-color: rgb(247, 247, 103);
+    cursor: pointer;
+    color:black
+}
+
+
+.input-group {
+    padding:20px;
+}
+
+.space {
+    margin-top: 50px;
+    padding:100px;
+}
+
+
+.footer {
+    background-color: rgb(247, 247, 103);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-size:15px;
+    padding:20px;
+}
