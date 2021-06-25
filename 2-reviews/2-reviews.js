@@ -83,6 +83,9 @@ function criticsPicksFour() {
 
 function displayMovies(data) {
     for (var i = 0; i < 5; i++) {
+
+    
+    moviesDiv.innerHTML = " ";
         
     const movie = data.results[i];
     const moviesDiv = document.getElementById("movies");
@@ -113,6 +116,8 @@ function displayMovies(data) {
 
 function displayMoviesTwo(data) {
     for (var i = 5; i < 10; i++) {
+
+    moviesDiv.innerHTML = " ";
         
     const movie = data.results[i];
     const moviesDiv = document.getElementById("movies");
@@ -144,6 +149,7 @@ function displayMoviesTwo(data) {
 function displayMoviesThree(data) {
     for (var i = 10; i < 15; i++) {
         
+    moviesDiv.innerHTML = " ";
     const movie = data.results[i];
     const moviesDiv = document.getElementById("movies");
     const movieTitle = movie.display_title;
@@ -173,6 +179,8 @@ function displayMoviesThree(data) {
 function displayMoviesFour(data) {
     for (var i = 15; i < 20; i++) {
         
+   
+    moviesDiv.innerHTML = " ";
     const movie = data.results[i];
     const moviesDiv = document.getElementById("movies");
     const movieTitle = movie.display_title;
