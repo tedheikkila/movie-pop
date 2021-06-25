@@ -2,6 +2,7 @@ let movieTitle, searchUrl = "";
 
 let sourceUrl = "https://api.watchmode.com/v1/sources/?apiKey=nWQ1K1yKiv353tqprKAXswej5MlSUEmSSLqaDjDe&regions=US";
 let sourceNames = [];
+let sourceListParent = document.getElementById("source-list");
 
 function searchApi() {
     fetch(searchUrl)
@@ -59,15 +60,30 @@ function arrayOfSourceNames(ls) {
             }
             console.log(data);
             console.log(sourceNames);
+            displaySources(sourceNames);
+            
         });
 }
 
 function movieTitleToSearch(title) {
+    // if(title.includes(":")) {
+
+    // }
     title = title.trim();
     movieTitle = title.replace(/ /g, "%20");
     searchUrl = "https://api.watchmode.com/v1/search/?apiKey=nWQ1K1yKiv353tqprKAXswej5MlSUEmSSLqaDjDe&search_field=name&search_value=" + movieTitle + "&types=movie";
+    searchApi();
 }
 
+function displaySources(ls) {
+    for (let i of ls) {
+        console.log(i);
+        let newSource = document.createElement("li");
+        newSource.textContent = i;
+        newSource.classList.add("body-text");
+        sourceListParent.appendChild(newSource);
+    }
+}
+
+
 movieTitleToSearch("john wick");
-console.log(searchUrl);
-searchApi();
