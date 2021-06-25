@@ -1,39 +1,38 @@
 # movie-pop
 
-Group 2, Project 1: Movie Pop
+Project 1: Movie Pop
 
 <br>
 
-Members: Lillian, Zach, Josh, Thomas, Ted
+Group 2 Members: Lillian, Zach, Josh, Ted
 
 <br>
 
-4 htmls in order of app's appearance/structure:
+Summary:
 <br>
-1. Homepage
-2. Reviews (NYT; left hand side of homepage)
-3. Locations (realgood; center of homepage)
-4. Trailers (traileraddict; right hand side of homepage)
-
-<br>
-
-1 css (maybe add more later)
-
-<br>
-
-4 js files in order of appearance/structure (see html structure above)
-
-<br>
-
-project-1-info folder contains requirements for project, group thoughts, etc
-
-
-
-
+The objective of this application...placeholder.
 
 
 
 
 <br>
+Breakdown:
+<br>
+Upon loading the application...placeholder. <br>
 
-Check out the deployed application here: 
+
+
+
+<br>
+Deployed Application URL:<br>
+Check out the deployed application here >>  https://tedheikkila.github.io/movie-pop/<br>
+
+
+
+<br>
+Screenshots:
+<br>
+
+
+
+
