@@ -1,4 +1,4 @@
-/* group one 1, movie pop, css for 1-homepage, 6-24-21 */
+/* group one 1, movie pop, css for 1-homepage, 6-24-21, TWH */
 
 /* document */
 * {
@@ -14,6 +14,7 @@ body {
 .jumbotron {
     height:230px;
     background-color: rgb(247, 247, 103);
+    border-bottom: solid 20px white;
 }
 
 .header-movie-pop {
@@ -40,6 +41,10 @@ body {
     margin-right:5%;
     margin-left:5%;
     margin-bottom:50px;
+}
+
+.card {
+    border-radius: 10px;
 }
 
 /* main 1 */
@@ -96,6 +101,17 @@ body {
     box-shadow: 0 6px 10px 0 rgba(255, 0, 0, 0.849), 0 6px 10px 0 rgba(255, 0, 0, 0.849);
 }
 
+#card-three {
+    background-color: rgb(39, 35, 35);
+    color:whitesmoke;
+    border-color: rgb(247, 247, 103);
+}
+
+#card-three:hover {
+    box-shadow: 0 6px 10px 0 whitesmoke, 0 6px 10px 0 whitesmoke;
+}
+
+
 .card-title-two {
     text-decoration: underline;
     margin-top:20px;
@@ -117,6 +133,7 @@ body {
     font-size:15px;
     padding:10px;
     margin-top:10px;
+    border-top: solid 10px white;
 }
 
 .copyrights {
