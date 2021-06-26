@@ -1,6 +1,6 @@
-/* group one 1, movie pop, css for 1-homepage, 6-24-21, TWH */
+/* group one 1, movie pop, css for index.html, 6-24-21, TWH */
 
-/* document */
+/* applied to all */
 * {
     box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ body {
 .jumbotron {
     height:230px;
     background-color: rgb(247, 247, 103);
-    border-bottom: solid 20px white;
+    border-bottom: solid 15px white;
 }
 
 .header-movie-pop {
@@ -74,7 +74,7 @@ body {
     color:black
 }
 
-/* btn between main 1 and main 2 */
+/* poppin btn between main 1 and main 2 */
 #poppin {
     border-color: rgb(247, 247, 103);
     color: rgb(247, 247, 103);
@@ -110,7 +110,6 @@ body {
 #card-three:hover {
     box-shadow: 0 6px 10px 0 whitesmoke, 0 6px 10px 0 whitesmoke;
 }
-
 
 .card-title-two {
     text-decoration: underline;
