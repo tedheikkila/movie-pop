@@ -45,6 +45,7 @@ body {
 /* main 1 */
 .card-title-one {
     font-size:35px;
+    margin-top:20px;
 }
 
 #deck-group-one {
@@ -68,9 +69,7 @@ body {
     color:black
 }
 
-/* p between main 1 and main 2 */
-
-
+/* btn between main 1 and main 2 */
 #poppin {
     border-color: rgb(247, 247, 103);
     color: rgb(247, 247, 103);
@@ -99,7 +98,7 @@ body {
 
 .card-title-two {
     text-decoration: underline;
-    margin-top:10px;
+    margin-top:20px;
 }
 
 .card-text-two, .card-text-three, .card-text-four {

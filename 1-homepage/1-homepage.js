@@ -6,6 +6,7 @@ const searchTrailerButton = document.querySelector('#search-trailer-button')
 const searchLocationButton = document.querySelector('#search-location-button')
 const poppinButton = document.querySelector('#poppin')
 let cardTextTwo = document.querySelector('.card-text-two')
+let cardTextThree = document.querySelector('.card-text-three')
 
 // handles review click event
 var buttonReviewHandler = function (event) {
@@ -34,13 +35,13 @@ searchLocationButton.addEventListener('click', buttonLocationHandler);
 
 
 // TMDb API Key >> b79f4f0496a78e0caa240f3b36e6debe
-
 var apiTmdbKey = 'b79f4f0496a78e0caa240f3b36e6debe'
 
 // example of API request >> https://api.themoviedb.org/3/movie/550?api_key=b79f4f0496a78e0caa240f3b36e6debe
-
 // trending movies request: https://api.themoviedb.org/3/trending/movie/day?api_key=<<api_key>>
 
+
+//trending movies api call and appending function
 var trendingMoviesRequest = 'https://api.themoviedb.org/3/trending/movie/day?api_key=' + apiTmdbKey
 
  //API call for trending movies 
@@ -67,7 +68,41 @@ var trendingMoviesRequest = 'https://api.themoviedb.org/3/trending/movie/day?api
     });
 }
 
-
 //events listeners added for poppin Button to initiate 3 different API calls
 poppinButton.addEventListener('click', getTrendingMoviesApi);
+
+
+// https://api.themoviedb.org/3/trending/person/day?api_key=<<api_key>>
+
+//trending movies api call and appending function
+var trendingPersonRequest = 'https://api.themoviedb.org/3/trending/person/day?api_key=' + apiTmdbKey
+
+ //API call for trending movies 
+ function getTrendingPersonApi() {
+  // fetch request loads city typed in
+  fetch(trendingPersonRequest)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+
+      console.log(data)
+
+      for (i=1; i<4; i++) {
+          var hotPerson = "#" + i + " " + data.results[i].name
+
+          var personEl = document.createElement('p');
+
+          personEl.classList = 'list-item flex-row justify-space-between align-center'
+
+          personEl.textContent = hotPerson
+
+          cardTextThree.append(personEl)
+      }
+
+    });
+}
+
+//events listeners added for poppin Button to initiate 3 different API calls
+poppinButton.addEventListener('click', getTrendingPersonApi);
 
