@@ -5,7 +5,6 @@ const searchReviewButton = document.querySelector('#search-review-button');
 const searchTrailerButton = document.querySelector('#search-trailer-button')
 const searchLocationButton = document.querySelector('#search-location-button')
 
-
 // handles review click event
 var buttonReviewHandler = function (event) {
     console.log(event)
@@ -34,6 +33,28 @@ searchTrailerButton.addEventListener('click', buttonTrailerHandler);
 searchLocationButton.addEventListener('click', buttonLocationHandler);
 
 
+// TMDb API Key >> b79f4f0496a78e0caa240f3b36e6debe
 
+var apiTmdbKey = 'b79f4f0496a78e0caa240f3b36e6debe'
 
+// example of API request >> https://api.themoviedb.org/3/movie/550?api_key=b79f4f0496a78e0caa240f3b36e6debe
 
+// trending movies request: https://api.themoviedb.org/3/trending/movie/day?api_key=<<api_key>>
+
+var trendingMoviesRequest = 'https://api.themoviedb.org/3/trending/movie/day?api_key=' + apiTmdbKey
+
+ //API call for trending movies 
+//  function getTrendingMoviesApi() {
+//   // fetch request loads city typed in
+//   fetch(trendingMoviesRequest)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+
+//       console.log(data)
+
+//     });
+// }
+
+// getTrendingMoviesApi()

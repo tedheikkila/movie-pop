@@ -69,8 +69,23 @@ body {
 }
 
 /* p between main 1 and main 2 */
-#lead-body {
+
+
+#poppin {
+    border-color: rgb(247, 247, 103);
     color: rgb(247, 247, 103);
+    text-align: center;
+    margin-left:33%;
+    margin-right:33%;
+    width:33%;
+    font-size:30px;
+    margin-top:10px;
+}
+
+#poppin:hover {
+    background-color: rgba(255, 0, 0, 0.849);
+    color:white;
+    border-color: rgba(255, 0, 0, 0.849);
 }
 
 /* main two */
