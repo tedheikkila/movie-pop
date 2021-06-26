@@ -4,6 +4,7 @@
 const searchReviewButton = document.querySelector('#search-review-button');
 const searchTrailerButton = document.querySelector('#search-trailer-button')
 const searchLocationButton = document.querySelector('#search-location-button')
+const poppinButton = document.querySelector('#poppin')
 
 // handles review click event
 var buttonReviewHandler = function (event) {
@@ -44,17 +45,25 @@ var apiTmdbKey = 'b79f4f0496a78e0caa240f3b36e6debe'
 var trendingMoviesRequest = 'https://api.themoviedb.org/3/trending/movie/day?api_key=' + apiTmdbKey
 
  //API call for trending movies 
-//  function getTrendingMoviesApi() {
-//   // fetch request loads city typed in
-//   fetch(trendingMoviesRequest)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
+ function getTrendingMoviesApi() {
+  // fetch request loads city typed in
+  fetch(trendingMoviesRequest)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
 
-//       console.log(data)
+      for (i=0; i<3; i++) {
+          console.log(data.results[i].title)
 
-//     });
-// }
+          
 
-// getTrendingMoviesApi()
+      }
+
+    
+
+    });
+}
+
+//events listeners added for review, traielr, and location buttons
+poppinButton.addEventListener('click', getTrendingMoviesApi);
