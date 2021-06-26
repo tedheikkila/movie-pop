@@ -99,9 +99,10 @@ body {
 
 .card-title-two {
     text-decoration: underline;
+    margin-top:10px;
 }
 
-.card-text-two {
+.card-text-two, .card-text-three, .card-text-four {
     color:rgba(255, 0, 0, 0.849);
     font-size:20px;
 }

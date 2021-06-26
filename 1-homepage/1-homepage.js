@@ -5,6 +5,7 @@ const searchReviewButton = document.querySelector('#search-review-button');
 const searchTrailerButton = document.querySelector('#search-trailer-button')
 const searchLocationButton = document.querySelector('#search-location-button')
 const poppinButton = document.querySelector('#poppin')
+let cardTextTwo = document.querySelector('.card-text-two')
 
 // handles review click event
 var buttonReviewHandler = function (event) {
@@ -28,9 +29,7 @@ var buttonLocationHandler = function (event) {
 
 //events listeners added for review, traielr, and location buttons
 searchReviewButton.addEventListener('click', buttonReviewHandler);
-
 searchTrailerButton.addEventListener('click', buttonTrailerHandler);
-
 searchLocationButton.addEventListener('click', buttonLocationHandler);
 
 
@@ -53,17 +52,22 @@ var trendingMoviesRequest = 'https://api.themoviedb.org/3/trending/movie/day?api
     })
     .then(function (data) {
 
-      for (i=0; i<3; i++) {
-          console.log(data.results[i].title)
+      for (i=1; i<4; i++) {
+          var hotMovie = "#" + i + " " + data.results[i].title
 
-          
+          var movieEl = document.createElement('p');
 
+          movieEl.classList = 'list-item flex-row justify-space-between align-center'
+
+          movieEl.textContent = hotMovie
+
+          cardTextTwo.append(movieEl)
       }
-
-    
 
     });
 }
 
-//events listeners added for review, traielr, and location buttons
+
+//events listeners added for poppin Button to initiate 3 different API calls
 poppinButton.addEventListener('click', getTrendingMoviesApi);
+
