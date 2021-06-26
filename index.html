@@ -2,102 +2,79 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--bootstrap link-->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <!--google fonts link (Poppins 400)-->
-   <link 
-    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-    rel="stylesheet">
-    <!--custom css link-->
-    <link rel="stylesheet" href="./1-homepage/1-homepage.css" />
-    <!--tab title-->
-    <title>movie Pop</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!--google fonts link (Poppins 400)-->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!--custom css link-->
+  <link rel="stylesheet" href="./1-homepage/1-homepage.css" />
+  <!--tab title-->
+  <title>movie Pop</title>
 </head>
+
 <body>
   <!--header-->
-<header class = "header-movie-pop">
-    <div class="jumbotron jumbotron-fluid">
+  <header class="header-movie-pop">
+    <section class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-3">movie Pop</h1>
         <p class="lead">a one-stop shop for movies</p>
       </div>
-    </div>
-</header>
+    </section>
+  </header>
 
-<main class = "deck-group">
-    <div class="card-deck">
-        <div class="card">
+  <main class="deck-group">
+    <section class="card-deck">
+      <section class="card">
         <div class="card-body">
-            <h4 class="card-title">Explore</h4>
-            <p class="card-text">check out top movie picks</p>
-            <div class="input-group">
-                <div class="input-group">
-                <button type="button" class="btn btn-success" id="search-review-button">Search</button>
-                </div>
-            </div>
+          <h4 class="card-title">Explore</h4>
+          <p class="card-text">check out top movie picks</p>
+          <button class="btn btn-success" type="button" id="search-review-button">Search</button>
         </div>
-        </div>
+      </section>
 
-
-        <div class="card">
+      <section class="card">
         <div class="card-body">
-            <h4 class="card-title">Watch</h4>
-            <p class="card-text">view a trailer</p>
-            <div class="input-group">
-                <input type="text" class="form-control" id="trailer-title" placeholder="Titanic" aria-label="" aria-describedby="basic-addon1">
-                <div class="input-group-append">
-                  <button class="btn btn-success" id="search-trailer-button" type="button">Search</button>
-                </div>
-            </div>
+          <h4 class="card-title">Watch</h4>
+          <p class="card-text">view a trailer</p>
+          <div class="input-group">
+            <button class="btn btn-success" type="button" id="search-trailer-button">Search</button>
+          </div>
         </div>
-        </div>
+      </section>
 
-
-        <div class="card">
+      <section class="card">
         <div class="card-body">
-            <h4 class="card-title">Now Showing</h4>
-            <p class="card-text">where to watch</p>
-            <div class="input-group">
-                <input type="text" class="form-control" id="location-title" placeholder="Frozen" aria-label="" aria-describedby="basic-addon1">
-                <div class="input-group-append">
-                  <button class="btn btn-success" id="search-location-button" type="button">Search</button>
-                </div>
-            </div>
+          <h4 class="card-title">Now Showing</h4>
+          <p class="card-text">where to watch</p>
+          <button class="btn btn-success" type="button" id="search-location-button">Search</button>
         </div>
-        </div>
+      </section>
+    </section>
+  </main>
 
+  <div class="space"></div>
 
-    </div>
-</main>
+  <footer class="footer">
+    <p class="copyrights">movie Pop @ 2021</p>
+  </footer>
 
-<div class="space"></div>
-
- 
-
-
-
-<footer class="footer">
-    <p class = "rights">movie Pop @ 2021</p>
-</footer>
-
-
-<!--js links-->
-<!--jQuery (min)-->
+  <!--js links-->
+  <!--jQuery (min)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--momment.js (min)-->
+  <!--momment.js (min)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<!--bootstrap (min and popper)-->
+  <!--bootstrap (min and popper)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!--custom js-->
-  <script type="text/javascript" src="1-homepage.js"></script>
+  <!--custom js-->
+  <script type="text/javascript" src="./1-homepage/1-homepage.js"></script>
 
 </body>
+
 </html>

@@ -4,69 +4,36 @@
 const searchReviewButton = document.querySelector('#search-review-button');
 const searchTrailerButton = document.querySelector('#search-trailer-button')
 const searchLocationButton = document.querySelector('#search-location-button')
-let trailerInputEl = document.querySelector('#trailer-title');
-let locationInputEl = document.querySelector('#location-title');
-
-
-// goBackButton.addEventListener('click', homepage);
 
 
 // handles review click event
-var formReviewHandler = function (event) {
+var buttonReviewHandler = function (event) {
     console.log(event)
-    document.location.replace('../2-reviews/2-reviews.html');
-    // document.location.replace('../1-homepage/1-homepage.html')
+    document.location.replace('./2-reviews/2-reviews.html');
+
 }
 
-// handles typed movie title for trailer
-var formTrailerHandler = function (event) {
-    event.preventDefault();
+// handles trailer click event
+var buttonTrailerHandler = function (event) {
+  console.log(event)
+  document.location.replace('./4-trailers/4-trailers.html');
   
-    var trailer = trailerInputEl.value.trim();
-  
-    if (trailer) {
-      getTrailerApi(trailer);
-  
-      trailerInputEl.value = '';
-    } else {
-      alert('Please enter a movie title');
-    }
-  };
+}
 
-  // handles typed movie title for location 
-  var formLocationHandler = function (event) {
-    event.preventDefault();
-  
-    var location = locationInputEl.value.trim();
-  
-    if (location) {
-      getLocation(location);
-  
-      locationInputEl.value = '';
-    } else {
-      alert('Please enter a movie title');
-    }
-  };
+ // handles locations click event
+var buttonLocationHandler = function (event) {
+  console.log(event)
+  document.location.replace('./3-locations/3-locations.html');
+}
+
+//events listeners added for review, traielr, and location buttons
+searchReviewButton.addEventListener('click', buttonReviewHandler);
+
+searchTrailerButton.addEventListener('click', buttonTrailerHandler);
+
+searchLocationButton.addEventListener('click', buttonLocationHandler);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-searchReviewButton.addEventListener('click', formReviewHandler);
-
-searchTrailerButton.addEventListener('click', formTrailerHandler);
-
-searchLocationButton.addEventListener('click', formLocationHandler)
 
 
