@@ -1,5 +1,6 @@
 /* group one 1, movie pop, css for 1-homepage, 6-24-21 */
 
+/* document */
 * {
     box-sizing: border-box;
 }
@@ -9,6 +10,7 @@ body {
     background-color: rgb(39, 35, 35);  
 }
 
+/* header */
 .jumbotron {
     height:230px;
     background-color: rgb(247, 247, 103);
@@ -27,28 +29,37 @@ body {
     color:rgba(255, 0, 0, 0.849);
     font-weight: 900;
     font-size: 30px;
+    text-align: center;
 }
 
+/* main */
 .deck-group {
     text-align:center;
-    margin-top:80px;
+    margin-top:50px;
     width:90%;
     margin-right:5%;
     margin-left:5%;
+    margin-bottom:50px;
 }
 
-.card-title {
+/* main 1 */
+.card-title-one {
     font-size:35px;
 }
 
-.card:hover {
-    box-shadow: 0 6px 10px 0 rgb(247, 247, 103), 0 6px 10px 0 rgb(247, 247, 103);
+#deck-group-one {
+    margin-top:100px;
+}
 
+#card-one:hover {
+    box-shadow: 0 6px 10px 0 rgb(247, 247, 103), 0 6px 10px 0 rgb(247, 247, 103);
 }
 
 #search-review-button, #search-trailer-button, #search-location-button {
     background-color:rgba(255, 0, 0, 0.849);
+    font-size:20px;
     border:none;
+    margin-top:15px;
 }
 
 #search-review-button:hover, #search-trailer-button:hover, #search-location-button:hover {
@@ -57,23 +68,26 @@ body {
     color:black
 }
 
-#search-review-button {
-    text-align: center;
-    margin-top:-11%;
-    margin-left:25%;
-    margin-right:25%;
+/* p between main 1 and main 2 */
+#lead-body {
+    color: rgb(247, 247, 103);
 }
 
-.input-group {
-    padding:20px;
+/* main two */
+#deck-group-two {
+    margin-bottom:130px;
 }
 
-.space {
-    margin-top: 50px;
-    padding: 50px;
+#card-two:hover {
+    box-shadow: 0 6px 10px 0 rgba(255, 0, 0, 0.849), 0 6px 10px 0 rgba(255, 0, 0, 0.849);
 }
 
+.card-text-two {
+    color:rgba(255, 0, 0, 0.849);
+    font-size:20px;
+}
 
+/* footer */
 .footer {
     background-color: rgb(247, 247, 103);
     left: 0;
@@ -82,12 +96,10 @@ body {
     color: black;
     text-align: center;
     font-size:15px;
-    padding:20px;
+    padding:10px;
+    margin-top:10px;
 }
 
 .copyrights {
     margin-top:15px;
 }
-
-
-
