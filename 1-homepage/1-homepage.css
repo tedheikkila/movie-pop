@@ -82,6 +82,10 @@ body {
     box-shadow: 0 6px 10px 0 rgba(255, 0, 0, 0.849), 0 6px 10px 0 rgba(255, 0, 0, 0.849);
 }
 
+.card-title-two {
+    text-decoration: underline;
+}
+
 .card-text-two {
     color:rgba(255, 0, 0, 0.849);
     font-size:20px;
@@ -102,4 +106,12 @@ body {
 
 .copyrights {
     margin-top:15px;
+}
+
+.careers {
+    margin-left:50px;
+}
+
+.careers:hover {
+    color:rgba(255, 0, 0, 0.849)
 }
