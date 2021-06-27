@@ -141,3 +141,8 @@ function getPopularMoviesApi() {
 
 //events listeners added for poppin Button to initiate 3 different API calls
 poppinButton.addEventListener('click', getPopularMoviesApi);
+
+
+
+
+
