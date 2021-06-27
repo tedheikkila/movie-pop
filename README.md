@@ -13,7 +13,7 @@ The objective of the application, Movie Pop, is to function as a one-stop shop f
 <br>
 Technologies Used:
 <br>
-Movie Pop was developed using HTMl, Google Fonts, CSS, Bootstrap, Javascript, and three server-side APIs. The three different server-side APIs were: The Movie Database (TMDb) for the homepage and trailers files, NYT Reviews for the top-rated reviews files, and Watch Mode for the where to watch files. For best results on PC, please render using Chrome. <br>
+Movie Pop was developed using HTML, Google Fonts, CSS, Bootstrap, Javascript, and three server-side APIs. The three different server-side APIs were: The Movie Database (TMDb) for the homepage and trailers files, NYT Reviews for the top-rated reviews files, and Watch Mode for the where to watch files. For best results on PC, please render using Chrome. <br>
 
 <br>
 Breakdown:
