@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./4-trailers.css" />
     <title>movie-pop</title>
 </head>
@@ -15,36 +15,53 @@
         <h1>Trailers</h1>
     </header>
 
-   
 
-    <div class="flex-container">   <!--Holds both search area and the viewing area-->
+
+    <div class="flex-container">
+        <!--Holds both search area and the viewing area-->
         <button id="go-back">Go Back to Homepage</button>
         <div class="search-container">
-            <h2 class="search">Search by Movie: </h2>
-            
+            <h2 class="search">Search by Movie Title: </h2>
+
             <form>
-                <input name="movie-name" id="movie-name" placeholder="ex. Titanic" type="text" class="form-input" />
-                <!--add autofocus="true"??-->
-                <button id="search-btn" class="btn">Search</button>
+                <input type="text" id="movie-name" placeholder="ex. Titanic" class="movie-input" />
+                <button onclick="creatItem()" id="search" class="btn">Search</button>
+                <!-- <form action="http://www.youtube.com/results" method="get" target="_blank" >
+                        <input name="search_query" type="text" maxlength="130" /> -->
+                <!-- <select name="movie-name"> -->
+                <!-- <option value="">Trailers</option> -->
+                <!-- <option value="search_users">Channels</option> -->
+                <!-- </select> -->
+                <!-- <input type="submit" value="Search" /> -->
+            </form>
+
+
+            <!-- <input name="movie-name" id="movie-name" placeholder="ex. Titanic" type="text" class="form-input" /> -->
+            <!--add autofocus="true"??-->
+
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
             </form>
         </div>
 
+
+
         <main>
-            <section> 
+            <section>
                 <div class="img-container"></div>
-                    <h2 class="click">Click on trailer below to start watching</h2>
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/1xSYmg_kpMY"></iframe>
+                <h2 class="click">Click on trailer below to start watching</h2>
+                    <fieldset>
+                        <legend>Previously Searched Movies</legend>
+                        <!--Saved output-->
+                        <button onclick="readValue()" id="savedNames"></button>
+                    </fieldset>
+                <iframe id="frame" width="420" height="365" src="https://www.youtube.com/embed/1xSYmg_kpMY"></iframe>
             </section>
         </main>
-
+        
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="./4-trailers.js"></script>
 
 </body>
 
 </html>
-
-
-
