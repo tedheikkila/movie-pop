@@ -47,9 +47,8 @@ body {
     border-radius: 10px;
 }
 
-/* main 0 */ 
-
-/* movie shuffle output/text area */
+/* main 0
+movie shuffle output/text area */
 #popped-movie {
     width: 33%;
     margin-left:33%;
