@@ -156,9 +156,8 @@ function shuffleMoviesApi() {
     })
     .then(function (data) {
 
-      //grabs the top 20-100 popular movies and shuffles this array
       for (i = 0; i < 20; i++) {
-        var movieArray = data.results[i].title
+        var movieArray = [data.results[i].title]
 
         console.log(movieArray)
       }
