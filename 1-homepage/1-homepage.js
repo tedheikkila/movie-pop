@@ -157,7 +157,7 @@ function shuffleMoviesApi() {
     })
     .then(function (data) {
 
-      //this could be refactored (adding each string called title to an array; how to do this in for loop?)
+      //this could be refactored (adding each string of movie title to an array; how to do this in a for loop?)
       var One = data.results[0].title
       var Two = data.results[1].title
       var Three = data.results[2].title
