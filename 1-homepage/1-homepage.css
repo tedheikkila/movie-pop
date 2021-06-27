@@ -48,8 +48,9 @@ body {
 }
 
 /* main 0 */ 
-/* Password placeholder/output */
-#movie-generator {
+
+/* movie shuffle output/text area */
+#popped-movie {
     width: 33%;
     margin-left:33%;
     margin-right:33%;

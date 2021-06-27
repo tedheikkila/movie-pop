@@ -5,6 +5,7 @@ const searchReviewButton = document.querySelector('#search-review-button');
 const searchTrailerButton = document.querySelector('#search-trailer-button')
 const searchLocationButton = document.querySelector('#search-location-button')
 const poppinButton = document.querySelector('#poppin')
+const shuffleButton = document.querySelector('#shuffle')
 let cardTextTwo = document.querySelector('.card-text-two')
 let cardTextThree = document.querySelector('.card-text-three')
 let cardTextFour = document.querySelector('.card-text-four')
@@ -62,8 +63,9 @@ function getTrendingMoviesApi() {
 
         cardTextTwo.append(movieEl)
       }
-
     });
+
+  poppinButton.disabled = true
 }
 
 //events listeners added for poppin Button to initiate 3 different API calls
@@ -87,9 +89,9 @@ function getTrendingPersonApi() {
       //appends 3 styled p tags to hot Artists
       for (i = 1; i < 6; i++) {
         if (data.results[i].name == "Никита Федин") {
-            var hotPerson = "#" + i + " " + data.results[6].name
+          var hotPerson = "#" + i + " " + data.results[6].name
         } else
-        var hotPerson = "#" + i + " " + data.results[i].name
+          var hotPerson = "#" + i + " " + data.results[i].name
 
         var personEl = document.createElement('p');
 
@@ -100,11 +102,12 @@ function getTrendingPersonApi() {
         cardTextFour.append(personEl)
       }
     });
+
+  poppinButton.disabled = true
 }
 
 //events listeners added for poppin Button to initiate 3 different API calls
 poppinButton.addEventListener('click', getTrendingPersonApi);
-
 
 // https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
 
@@ -119,7 +122,6 @@ function getPopularMoviesApi() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data)
 
       //appends 3 styled p tags to in the Mic
       for (i = 1; i < 6; i++) {
@@ -137,12 +139,37 @@ function getPopularMoviesApi() {
       }
 
     });
+
+  poppinButton.disabled = true
 }
 
 //events listeners added for poppin Button to initiate 3 different API calls
 poppinButton.addEventListener('click', getPopularMoviesApi);
 
+//API call for popular movies 
+function shuffleMoviesApi() {
+
+  // fetch request loads
+  fetch(popularMovieRequest)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+
+      //grabs the top 20-100 popular movies and shuffles this array
+      for (i = 0; i < 20; i++) {
+        var movieArray = data.results[i].title
+
+        console.log(movieArray)
+      }
+
+    });
+
+}
 
 
 
 
+
+
+shuffleButton.addEventListener('click', shuffleMoviesApi)
