@@ -105,4 +105,3 @@ var homepage = function (event) {
     // function getMovieId() {
     //     var 
 
-}
