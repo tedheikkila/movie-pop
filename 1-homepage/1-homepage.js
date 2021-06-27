@@ -48,9 +48,10 @@ function getTrendingMoviesApi() {
       return response.json();
     })
     .then(function (data) {
+      // console.log(data)
 
       //appends 3 styled p tags to hot Movies
-      for (i = 1; i < 4; i++) {
+      for (i = 1; i < 6; i++) {
         var hotMovie = "#" + i + " " + data.results[i].title
 
         var movieEl = document.createElement('p');
@@ -81,9 +82,13 @@ function getTrendingPersonApi() {
       return response.json();
     })
     .then(function (data) {
+      // console.log(data)
 
       //appends 3 styled p tags to hot Artists
-      for (i = 1; i < 4; i++) {
+      for (i = 1; i < 6; i++) {
+        if (data.results[i].name == "Никита Федин") {
+            var hotPerson = "#" + i + " " + data.results[6].name
+        } else
         var hotPerson = "#" + i + " " + data.results[i].name
 
         var personEl = document.createElement('p');
@@ -100,37 +105,39 @@ function getTrendingPersonApi() {
 //events listeners added for poppin Button to initiate 3 different API calls
 poppinButton.addEventListener('click', getTrendingPersonApi);
 
-// https://api.themoviedb.org/3/movie/upcoming?api_key=<<api_key>>&language=en-US&page=1
 
-//upcoming movies api call and appending function
-var upcomingMovieRequest = 'https://api.themoviedb.org/3/movie/upcoming?api_key=' + apiTmdbKey
+// https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
 
-//API call for upcoming movies 
-function getUpcomingMoviesApi() {
+//popular movies api call and appending function
+var popularMovieRequest = 'https://api.themoviedb.org/3/movie/popular?api_key=' + apiTmdbKey + '&language=en-US&page=1'
+
+//API call for popular movies 
+function getPopularMoviesApi() {
   // fetch request loads
-  fetch(upcomingMovieRequest)
+  fetch(popularMovieRequest)
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+      console.log(data)
 
       //appends 3 styled p tags to in the Mic
-      for (i = 1; i < 4; i++) {
-        var hotUpcoming = "#" + i + " " + data.results[i].title
+      for (i = 1; i < 6; i++) {
+        var popMovie = "#" + i + " " + data.results[i].title
 
-        var upcomingEl = document.createElement('p');
+        var popMovieEl = document.createElement('p');
 
-        upcomingEl.classList = 'list-item flex-row justify-space-between align-center'
+        popMovieEl.classList = 'list-item flex-row justify-space-between align-center'
 
-        upcomingEl.style.color = "rgb(247, 247, 103)"
+        popMovieEl.style.color = "rgb(247, 247, 103)"
 
-        upcomingEl.textContent = hotUpcoming
+        popMovieEl.textContent = popMovie
 
-        cardTextThree.append(upcomingEl)
+        cardTextThree.append(popMovieEl)
       }
 
     });
 }
 
 //events listeners added for poppin Button to initiate 3 different API calls
-poppinButton.addEventListener('click', getUpcomingMoviesApi);
+poppinButton.addEventListener('click', getPopularMoviesApi);
