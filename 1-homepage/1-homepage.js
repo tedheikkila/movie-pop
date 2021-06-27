@@ -50,7 +50,6 @@ function getTrendingMoviesApi() {
       return response.json();
     })
     .then(function (data) {
-      // console.log(data)
 
       // appends 3 styled p tags to hot Movies
       for (i = 1; i < 6; i++) {
@@ -66,6 +65,7 @@ function getTrendingMoviesApi() {
       }
     });
 
+  //disables poppinButton to prevent previously appended items from being duplicated
   poppinButton.disabled = true
 }
 
@@ -85,7 +85,6 @@ function getTrendingPersonApi() {
       return response.json();
     })
     .then(function (data) {
-      // console.log(data)
 
       // appends 3 styled p tags to hot Artists
       for (i = 1; i < 6; i++) {
@@ -104,6 +103,7 @@ function getTrendingPersonApi() {
       }
     });
 
+  //disables poppinButton to prevent previously appended items from being duplicated
   poppinButton.disabled = true
 }
 
@@ -141,6 +141,7 @@ function getPopularMoviesApi() {
 
     });
 
+  //disables poppinButton to prevent previously appended items from being duplicated
   poppinButton.disabled = true
 }
 
@@ -149,7 +150,6 @@ poppinButton.addEventListener('click', getPopularMoviesApi);
 
 // API call for popular movies 
 function shuffleMoviesApi() {
-
   // fetch request loads
   fetch(popularMovieRequest)
     .then(function (response) {
@@ -157,6 +157,7 @@ function shuffleMoviesApi() {
     })
     .then(function (data) {
 
+      //this could be refactored (adding each string called title to an array; how to do this in for loop?)
       var One = data.results[0].title
       var Two = data.results[1].title
       var Three = data.results[2].title
@@ -182,6 +183,7 @@ function shuffleMoviesApi() {
         Thirteen, Fourteen, Fifteen, Sixteen, Seventeen, Eighteen, Nineteen, Twenty
       ]
 
+      //sorts the top 20 popular movie strings using Fisher-Yates shuffle method
       function shuffle() {
         var m = twentyMovies.length, t, i;
         while (m) {
@@ -193,10 +195,13 @@ function shuffleMoviesApi() {
         return twentyMovies;
       }
 
+      //calls shuffled function
       var shuffled = shuffle(twentyMovies)
 
+      //slices first title at index position 0
       var shuffleSliced = shuffled.slice(0, 1)
 
+      //displays movie in textarea (read only; intent is for user to copy and paste this title)
       poppedMovie.textContent = shuffleSliced
     });
 
