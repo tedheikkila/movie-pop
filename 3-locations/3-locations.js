@@ -8,6 +8,7 @@ let sourceListParent = document.getElementById("source-list");
 let searchButton = document.getElementById("search-button");
 let previousSearchesDiv = document.getElementById("previous-searched-movies");
 let clearButton = document.getElementById("clear-button");
+let searchedMovie = document.getElementById("searched-movie");
 
 // All of the consts for the several API calls made throughout this webpage
 const sourceUrl = "https://api.watchmode.com/v1/sources/?apiKey=nWQ1K1yKiv353tqprKAXswej5MlSUEmSSLqaDjDe&regions=US";
@@ -42,24 +43,20 @@ function searchApi(searchUrl) {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
             try {
                 if (data.title_results.length == 0) {
-                    // TODO: Add modal to say that the search cant find given movie name
-                    console.log("Sorry but no movie came up with that name");
+                    searchedMovie.textContent = "Sorry, no movie came up with that name. Please make sure that the movie title is exactly correct in the search bar";
                 } else {
                     let id = data.title_results[0].id;
                     setMovieTitle(data.title_results[0].name);
                     setPreviousSearch(data.title_results[0].name);
-                    let searchedMovie = document.getElementById("searched-movie");
                     searchedMovie.textContent = movieTitle + " can be watched from the following streaming services:"
-
                     let titleUrl = titleUrlBeginning + id + titleUrlEnding;
                     titleSourcesApi(titleUrl);
                 }
             } catch (error) {
                 console.log(error);
-                console.log("Incorrect movie title")
+                searchedMovie.textContent = "Error caught in the program. Please check the dev console for an error message"
             }
         });
 }
@@ -104,8 +101,7 @@ function arrayOfSourceNames(ls) {
 
 function movieTitleToSearch(title) {
     if (title == "") {
-        // TODO: Add modal to say that the search cant handle certain punctuation title.includes(":")
-        console.log("Search can't handle these conditions");
+        searchedMovie.textContent = "Please enter in an actual movie title"
     } else {
         title = title.trim();
         movieTitle = title.replace(/ /g, "%20");
