@@ -55,12 +55,10 @@ function getTrendingMoviesApi() {
       for (i = 1; i < 6; i++) {
         var hotMovie = "#" + i + " " + data.results[i].title
 
+        //create list element for trending/hot movies (5 in total)
         var movieEl = document.createElement('p');
-
         movieEl.classList = 'list-item flex-row justify-space-between align-center'
-
         movieEl.textContent = hotMovie
-
         cardTextTwo.append(movieEl)
       }
     });
@@ -88,17 +86,16 @@ function getTrendingPersonApi() {
 
       // appends 3 styled p tags to hot Artists
       for (i = 1; i < 6; i++) {
+        //odd result that appears in API output; had to scrub out this value and replace appropriately
         if (data.results[i].name == "Никита Федин") {
           var hotPerson = "#" + i + " " + data.results[6].name
         } else
           var hotPerson = "#" + i + " " + data.results[i].name
 
+        //creating list element for trending person (five in total)
         var personEl = document.createElement('p');
-
         personEl.classList = 'list-item flex-row justify-space-between align-center'
-
         personEl.textContent = hotPerson
-
         cardTextFour.append(personEl)
       }
     });
@@ -129,13 +126,9 @@ function getPopularMoviesApi() {
         var popMovie = "#" + i + " " + data.results[i].title
 
         var popMovieEl = document.createElement('p');
-
         popMovieEl.classList = 'list-item flex-row justify-space-between align-center'
-
         popMovieEl.style.color = "rgb(247, 247, 103)"
-
         popMovieEl.textContent = popMovie
-
         cardTextThree.append(popMovieEl)
       }
 
@@ -201,10 +194,27 @@ function shuffleMoviesApi() {
       //slices first title at index position 0
       var shuffleSliced = shuffled.slice(0, 1)
 
-      //displays movie in textarea (read only; intent is for user to copy and paste this title)
+      //sets most previously popped movie into local storage as one string value
+      localStorage.setItem("save-movie", shuffleSliced);
+
+      //display movie in textarea (read only; intent is for user to copy and paste this title)
       poppedMovie.textContent = shuffleSliced
     });
 
 }
 
 shuffleButton.addEventListener('click', shuffleMoviesApi)
+
+// gets saved movie from local storage set previously using shuffle movie btn
+function getSavedMovie() {
+  var storedMovie = localStorage.getItem("save-movie");
+  // on first page return, checks if value is null (no previous shuffle btn click events)
+  if (storedMovie === null) {
+    poppedMovie.textContent = "";
+  } else {
+    poppedMovie.textContent = storedMovie;
+  }
+}
+
+// calling getSavedMovie on page render/browser refresh
+getSavedMovie()
