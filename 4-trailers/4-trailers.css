@@ -96,7 +96,7 @@ body {
     align-items: center;
     margin-right: 12%;
     margin-left: 20%;
-    margin-top: -30%;
+    margin-top: 0%;
     display: inline-flexbox;
 }
 
@@ -116,12 +116,16 @@ legend {
         margin-left: 1%;
        
 }
-
-.img-container::after {
+/* 
+.img-container {
     display: block;
     clear: both;
     content: " ";
-    }
+    margin-top: 30%;
+    } */
+/* .img-container {
+    display: block;
+} */
 
 @media screen and (max-width: 600px) {
     .flex-container, .img-container {
