@@ -4,27 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="2-reviews.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Reviews</title>
-    <header>
-        <h1>Reviews</H1>
-    </header>
 </head>
+
 <body>
-
-
-    <button type="button" id="button1">Display Critics Picks</button>
-    <button type="button" id="button2">Display Critics Picks 6-10</button>
-    <button type="button" id="button3">Display Critics Picks 11-15</button>
-    <button type="button" id="button4">Display Critics Picks 16-20</button>
-
-    <div id = "movies"></div>
-
+    <nav class="navbar navbar-light font-weight-bold">
+        <h1>Critic's Picks</h1>
+        <div class="justify-content-right project-htmls">
+            <a href="../1-homepage/1-homepage.html">Homepage</a>
+            <a href="../3-locations/3-locations.html">Where to Watch</a>
+            <a href="../4-trailers/4-trailers.html">Trailers</a>
+        </div>
+    </nav>
     
+    <section class="buttonbar">
+        <div class="btn-group btn-group-large btncontainer" role="group" aria-label="Basic example">
+            
+            <button type="button" class="btn btn-outline-secondary btn-block bg-transparent button" id="button1" >Picks 1-5</button>
+            <button type="button" class="btn btn-outline-secondary btn-block bg-transparent button" id="button2">Picks 6-10</button>
+            <button type="button" class="btn btn-outline-secondary btn-block bg-transparent button" id="button3">Picks 11-15</button>
+            <button type="button" class="btn btn-outline-secondary btn-block bg-transparent button" id="button4">Picks 16-20</button>
+            
+        </div>
+
+        <div class = "blockquote bodytext">
+            Select a range to view the current list of critic's choice films from The New York Times
+        </div>
+    </section>
+    
+    <section id = "moviesDisplay">
+
+        <div id = "movies1"></div>
+        <div id = "movies2"></div>
+        <div id = "movies3"></div>
+        <div id = "movies4"></div>
+
+    </section>
     
 </body>
 
-<script src="2-reviews.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="2-reviews.js"></script>
 
 </html>

@@ -1,0 +1,129 @@
+
+* body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(39, 35, 35);
+}
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(247, 247, 103);
+    color: rgb(39, 35, 35);
+    
+}
+
+body{
+
+align-content: center;
+}
+
+h2 {
+    color: rgb(247, 247, 103);
+}
+h3 {
+    color: white;
+    font-size: medium;
+}
+
+#movies1 {
+
+    color: rgb(247, 247, 103);
+    padding-top: 10px;
+}
+#movies2 {
+
+    color: rgb(247, 247, 103);
+    padding-top: 10px;
+}
+#movies3 {
+
+    color: rgb(247, 247, 103);
+    padding-top: 10px;
+}
+#movies4 {
+
+    color: rgb(247, 247, 103);
+    padding-top: 10px;
+
+}
+
+#movieImage {
+
+    border-radius: 10px;
+    border-color: rgb(247, 247, 103);
+    margin-bottom: 10px;
+
+}
+
+div {
+    align-content: center;
+}
+
+
+.button:hover {
+    background-color: rgb(247, 247, 103);
+    border-color: rgb(247, 247, 103);
+    cursor: pointer;
+    color:rgba(255, 0, 0, 0.849);
+    
+}
+
+.btncontainer {
+    align-content: center;
+    
+}
+
+
+
+.button {
+    
+    border-radius: 25px;  
+    background-color: rgb(39, 35, 35); 
+    color:#FFFFFF;  
+    border-color: rgb(247, 247, 103);
+    text-align: center;  
+    font-family:'Poppins', sans-serif; 
+    
+     
+    
+}
+
+
+#moviesDisplay {
+
+    margin-left: 3%;
+    margin-right: 3%;
+    
+    
+}
+
+.project-htmls a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(39, 35, 35);
+    font-size: 28px;
+}
+.project-htmls a:hover {
+    color: rgba(255, 0, 0, 0.849);
+}
+.navbar h1 {
+    color: rgb(39, 35, 35);
+}
+.navbar {
+    height:15%;
+    background-color: rgb(247, 247, 103);
+    margin-bottom: 10px;
+}
+
+.bodytext {
+
+    color: rgb(247, 247, 103);
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    float: right;
+    margin-right: 15%;
+
+}
+.buttonbar {
+
+    margin-top: 10px;
+}

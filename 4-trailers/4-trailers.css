@@ -1,9 +1,9 @@
 * {
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-color: rgb(39, 35, 35);
 }
 
@@ -15,8 +15,22 @@ header {
    margin: 10px;
    padding: 10px;
    text-indent: 5mm;
-   
+   font-size: larger;
 } 
+
+ul {
+    padding: 0;
+    color: rgb(39, 35, 35);
+    font-size: 28px;
+    text-align: right;
+    justify-content: right;
+    display: block;
+    align-content: center;
+}
+
+.project-htmls a:hover {
+    color: rgba(255, 0, 0, 0.849);
+}
 
 #movie-name {
     background-color: white;
@@ -36,7 +50,6 @@ form input[type=text]:hover {
     cursor: pointer;
     color:white
 } 
-
 
 body {
     box-sizing: border-box;
@@ -65,13 +78,6 @@ body {
     height: 20px;
 }
 
-#go-back {
-    float: left;
-    border-radius: 10px;
-    background-color: black;
-    color: rgb(247, 247, 103);
-}
-
 .click {
     padding: 10px;
     align-items: center;
@@ -97,12 +103,11 @@ body {
     display: inline-flexbox;
 }
 
-
-fieldset {
+/* fieldset {
     width: 15%;
     margin-left: 1%;
     height: 300px;
-}
+} */
 
 legend {
         background-color: #FFFFE0;
@@ -113,12 +118,6 @@ legend {
         margin-left: 1%;
        
 }
-
-.img-container::after {
-    display: block;
-    clear: both;
-    content: " ";
-    }
 
 @media screen and (max-width: 600px) {
     .flex-container, .img-container {

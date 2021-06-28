@@ -14,7 +14,7 @@
   <!--custom css link-->
   <link rel="stylesheet" href="./1-homepage/1-homepage.css" />
   <!--tab title-->
-  <title>movie Pop</title>
+  <title>Movie Pop</title>
 </head>
 
 <body>
@@ -22,11 +22,21 @@
   <header class="header-movie-pop">
     <section class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-3">movie Pop</h1>
-        <p class="lead" id="lead-header">a one-stop Shop for movies</p>
+        <h1 class="display-3">Movie Pop</h1>
+        <p class="lead" id="lead-header">a one-stop shop for movies</p>
       </div>
     </section>
   </header>
+
+  <!--main zero contains movie shuffler textarea and btn-->
+  <main class="movie-shuffler">
+    <!--movie title gets displayed here-->
+    <textarea readonly id="popped-movie" placeholder="movie pop"></textarea>
+    <!--movie shuffler movie btn-->
+    <div>
+      <button type="button" class="btn btn-outline-success" id="shuffle">shuffle movies</button>
+    </div>
+  </main>
 
   <!--main one contains reviews, trailers, and locations-->
   <main class="deck-group" id="deck-group-one">
@@ -50,7 +60,7 @@
       <!--locations-->
       <section class="card" id="card-one">
         <div class="card-body">
-          <h4 class="card-title-one">now Showing</h4>
+          <h4 class="card-title-one">Now Showing</h4>
           <p class="card-text-one">where to watch</p>
           <button class="btn btn-success" type="button" id="search-location-button">Find</button>
         </div>
@@ -58,31 +68,31 @@
     </section>
   </main>
 
-  <!--poppin button-->
+  <!--what's poppin button-->
   <div>
-    <button type="button" class="btn btn-outline-success" id="poppin">what's Poppin'?</button>
+    <button type="button" class="btn btn-outline-success" id="poppin">what's poppin'?</button>
   </div>
 
-  <!--main 2 contains hot Movies, in the Mic, and hot Artists-->
+  <!--main 2 contains hot movies, pop movies, and hot artists-->
   <main class="deck-group" id="deck-group-two">
     <section class="card-deck">
       <!--hot movies-->
       <section class="card" id="card-two">
-        <h2 class="card-title-two">hot Movies</h2>
+        <h2 class="card-title-two">Hot Movies</h2>
         <div class="card-body">
           <p class="card-text-two"></p>
         </div>
       </section>
-      <!--in the Mic-->
+      <!--pop movies-->
       <section class="card" id="card-three">
-        <h2 class="card-title-two">in the Mic</h2>
+        <h2 class="card-title-two">Pop Movies</h2>
         <div class="card-body">
           <p class="card-text-three"></p>
         </div>
       </section>
       <!--hot artists-->
       <section class="card" id="card-two">
-        <h2 class="card-title-two">hot Artists</h2>
+        <h2 class="card-title-two">Hot Artists</h2>
         <div class="card-body">
           <p class="card-text-four"></p>
         </div>
@@ -92,13 +102,13 @@
 
   <!--footer-->
   <footer class="footer">
-    <p class="copyrights">movie Pop @ 2021<span class="careers">careers</span></p>
+    <p class="copyrights">Movie Pop @ 2021<span class="careers">Careers</span></p>
   </footer>
 
-  <!--js links-->
+  <!--js links (not all were used; mostly bootstrap & custom js)-->
   <!--jQuery (min)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!--momment.js (min)-->
+  <!--moment.js (min)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <!--bootstrap (min and popper)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
@@ -107,5 +117,6 @@
   <script type="text/javascript" src="./1-homepage/1-homepage.js"></script>
 
 </body>
+<!--end of body (test)-->
 
 </html>
