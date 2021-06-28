@@ -7,6 +7,7 @@ let localStorageArr = [];
 let sourceListParent = document.getElementById("source-list");
 let searchButton = document.getElementById("search-button");
 let previousSearchesDiv = document.getElementById("previous-searched-movies");
+let clearButton = document.getElementById("clear-button");
 
 // All of the consts for the several API calls made throughout this webpage
 const sourceUrl = "https://api.watchmode.com/v1/sources/?apiKey=nWQ1K1yKiv353tqprKAXswej5MlSUEmSSLqaDjDe&regions=US";
@@ -115,11 +116,18 @@ function movieTitleToSearch(title) {
 
 function displaySources(ls) {
     sourceListParent.innerHTML = "";
-    for (let i of ls) {
+    if (ls.length == 0) {
         let newSource = document.createElement("li");
-        newSource.textContent = i;
+        newSource.textContent = "Sorry, we weren't able to find any streaming locations for " + movieTitle;
         newSource.classList.add("body-text");
         sourceListParent.appendChild(newSource);
+    } else {
+        for (let i of ls) {
+            let newSource = document.createElement("li");
+            newSource.textContent = i;
+            newSource.classList.add("body-text");
+            sourceListParent.appendChild(newSource);
+        }
     }
 }
 
@@ -139,8 +147,6 @@ function displayPreviousSearches() {
     }
 }
 
-
-
 // Below are the event listeners for the locations webapge
 // This event listener is for the submit button. On click it will call movieTitleToSearch() on whatever the given movie title is
 searchButton.addEventListener("click", function (event) {
@@ -157,6 +163,12 @@ previousSearchesDiv.addEventListener("click", function (event) {
     let titleName = event.target.textContent;
     sourceNames = [];
     movieTitleToSearch(titleName);
+    displayPreviousSearches();
+});
+
+clearButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    localStorage.clear();
     displayPreviousSearches();
 });
 
