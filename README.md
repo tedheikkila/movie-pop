@@ -30,6 +30,22 @@ Check out the deployed application here >>  https://tedheikkila.github.io/movie-
 <br>
 Screenshots:
 <br>
+Homepage
+<br>
+<img src = "./images/proj-1.png">
+movie shuffler
+<br>
+<img src = "./images/proj-2.png">
+<br>
+what's poppin?
+<br>
+<img src = "./images/proj-3.png">
+Hot (Trending) Movies, Pop (Popular) Movies, and Hot (Trending) Artists
+<br>
+<img src = "./images/proj-4.png">
+Reviews
+<br>
+<img src = "./images/proj-5.png">
 
 
 
