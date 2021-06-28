@@ -21,4 +21,11 @@
 
 .body-text {
     color: white;
+    text-align: center;
+}
+
+#source-list {
+    text-align: center;
+    list-style-type: none;
+    font-size: 24px;
 }
