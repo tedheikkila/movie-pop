@@ -46,6 +46,12 @@ Hot (Trending) Movies, Pop (Popular) Movies, and Hot (Trending) Artists
 Reviews
 <br>
 <img src = "./images/proj-5.png">
+Picks 1-5
+<br>
+<img src = "./images/proj-6.png">
+Picks 6-10
+<br>
+<img src = "./images/proj-7.png">
 
 
 
