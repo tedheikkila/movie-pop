@@ -105,7 +105,7 @@ function displayMovies(data) {
     moviesDiv.appendChild(movieImage);
 
     const reviewUrl = movie.link.url;
-    console.log(reviewUrl);
+    // console.log(reviewUrl);
 
 
 
@@ -138,7 +138,7 @@ function displayMoviesTwo(data) {
     moviesDiv.appendChild(movieImage);
 
     const reviewUrl = movie.link.url;
-    console.log(reviewUrl);
+    // console.log(reviewUrl);
 
     
     
@@ -169,7 +169,7 @@ function displayMoviesThree(data) {
     moviesDiv.appendChild(movieImage);
 
     const reviewUrl = movie.link.url;
-    console.log(reviewUrl);
+    // console.log(reviewUrl);
 
     
     
@@ -200,7 +200,7 @@ function displayMoviesFour(data) {
     moviesDiv.appendChild(movieImage);
 
     const reviewUrl = movie.link.url;
-    console.log(reviewUrl);
+    // console.log(reviewUrl);
 
     
     

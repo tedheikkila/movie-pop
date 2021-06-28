@@ -42,7 +42,7 @@ function searchApi(searchUrl) {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
+            // console.log(data);
             try {
                 if (data.title_results.length == 0) {
                     // TODO: Add modal to say that the search cant find given movie name
