@@ -20,7 +20,6 @@ var button4 = document.getElementById("button4");
 
 function criticsPicks() {
     
-    
 
     fetch(apiUrl)
     .then(function (response) {
@@ -83,14 +82,14 @@ function criticsPicksFour() {
 
 function displayMovies(data) {
     for (var i = 0; i < 5; i++) {
-
-    
-    moviesDiv.innerHTML = " ";
         
+        
+       
+
     const movie = data.results[i];
-    const moviesDiv = document.getElementById("movies");
+    const moviesDiv = document.getElementById("movies1");
     const movieTitle = movie.display_title;
-    const heading = document.createElement("h1");
+    const heading = document.createElement("h2");
     heading.innerHTML = movieTitle;
     moviesDiv.appendChild(heading);
     
@@ -108,7 +107,8 @@ function displayMovies(data) {
     const reviewUrl = movie.link.url;
     console.log(reviewUrl);
 
-    
+
+
     
     
 }
@@ -117,10 +117,10 @@ function displayMovies(data) {
 function displayMoviesTwo(data) {
     for (var i = 5; i < 10; i++) {
 
-    moviesDiv.innerHTML = " ";
+    
         
     const movie = data.results[i];
-    const moviesDiv = document.getElementById("movies");
+    const moviesDiv = document.getElementById("movies2");
     const movieTitle = movie.display_title;
     const heading = document.createElement("h1");
     heading.innerHTML = movieTitle;
@@ -149,9 +149,9 @@ function displayMoviesTwo(data) {
 function displayMoviesThree(data) {
     for (var i = 10; i < 15; i++) {
         
-    moviesDiv.innerHTML = " ";
+   
     const movie = data.results[i];
-    const moviesDiv = document.getElementById("movies");
+    const moviesDiv = document.getElementById("movies3");
     const movieTitle = movie.display_title;
     const heading = document.createElement("h1");
     heading.innerHTML = movieTitle;
@@ -180,9 +180,9 @@ function displayMoviesFour(data) {
     for (var i = 15; i < 20; i++) {
         
    
-    moviesDiv.innerHTML = " ";
+    
     const movie = data.results[i];
-    const moviesDiv = document.getElementById("movies");
+    const moviesDiv = document.getElementById("movies4");
     const movieTitle = movie.display_title;
     const heading = document.createElement("h1");
     heading.innerHTML = movieTitle;
@@ -207,6 +207,25 @@ function displayMoviesFour(data) {
     
 }
 }
+
+
+function clearDisplay(moviesDisplay) {
+
+    document.getElementById("movies1").innerHTML = " ";
+    document.getElementById("movies2").innerHTML = " ";
+    document.getElementById("movies3").innerHTML = " ";
+    document.getElementById("movies4").innerHTML = " ";
+
+
+}
+
+
+button1.addEventListener("click", clearDisplay);
+button2.addEventListener("click", clearDisplay);
+button3.addEventListener("click", clearDisplay);
+button4.addEventListener("click", clearDisplay);
+
+
 
 
 
