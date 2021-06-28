@@ -6,25 +6,30 @@
 header {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(247, 247, 103);
-    color: rgb(39, 35, 35);
-    
+    color: rgb(39, 35, 35);    
 }
 
 body{
+    align-content: center;
+}
 
-align-content: center;
+h1 {
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-top:5%;
+    font-size: 50px;
 }
 
 h2 {
     color: rgb(247, 247, 103);
 }
+
 h3 {
     color: white;
     font-size: medium;
 }
 
 #movies1 {
-
     color: rgb(247, 247, 103);
     padding-top: 10px;
 }
@@ -39,60 +44,52 @@ h3 {
     padding-top: 10px;
 }
 #movies4 {
-
     color: rgb(247, 247, 103);
     padding-top: 10px;
-
 }
 
 #movieImage {
-
     border-radius: 10px;
     border-color: rgb(247, 247, 103);
     margin-bottom: 10px;
-
 }
 
 div {
     align-content: center;
 }
 
-
 .button:hover {
     background-color: rgb(247, 247, 103);
     border-color: rgb(247, 247, 103);
     cursor: pointer;
-    color:rgba(255, 0, 0, 0.849);
-    
+    color:rgba(255, 0, 0, 0.849);   
 }
 
 .btncontainer {
     align-content: center;
-    
+    margin-left:20%;
+    margin-right:20%;
+    margin-top: 5%;
+    width:60%;
 }
 
+#button1, #button2, #button3, #button4 {
 
+    font-size:25px;
+}
 
 .button {
-    
     border-radius: 25px;  
     background-color: rgb(39, 35, 35); 
     color:#FFFFFF;  
     border-color: rgb(247, 247, 103);
     text-align: center;  
-    font-family:'Poppins', sans-serif; 
-    
-     
-    
+    font-family:'Poppins', sans-serif;  
 }
 
-
 #moviesDisplay {
-
     margin-left: 3%;
-    margin-right: 3%;
-    
-    
+    margin-right: 3%;   
 }
 
 .project-htmls a {
@@ -101,29 +98,35 @@ div {
     color: rgb(39, 35, 35);
     font-size: 28px;
 }
+
 .project-htmls a:hover {
     color: rgba(255, 0, 0, 0.849);
 }
+
 .navbar h1 {
     color: rgb(39, 35, 35);
 }
+
 .navbar {
     height:15%;
     background-color: rgb(247, 247, 103);
     margin-bottom: 10px;
 }
 
-.bodytext {
+#nav-text {
+    margin-right:5%;
+}
 
+.bodytext {
     color: rgb(247, 247, 103);
     font-style: italic;
     font-family: 'Poppins', sans-serif;
     font-size: small;
     float: right;
     margin-right: 15%;
-
+    margin-top: 5%;
+    font-size:15px;
 }
 .buttonbar {
-
     margin-top: 10px;
 }
