@@ -7,28 +7,38 @@ body {
     background-color: rgb(39, 35, 35);
 }
 
-header {
-   background-color: rgb(247, 247, 103);
-   width: 95%;
-   margin-left: 2%;
-   /* color: black; */
-   margin: 10px;
-   padding: 10px;
-   text-indent: 5mm;
-   height:230px;
-   display: inline;
-} 
-
-
-ul {
-    padding: 0;
-    /* list-style-type: none; */
-    /* text-decoration: none; */
-    color: rgb(39, 35, 35);
-    font-size: 28px;
-  
+h1 {
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-top:5%;
+    font-size: 50px;
 }
 
+.navbar h1 {
+    color: rgb(39, 35, 35);
+}
+
+.navbar {
+    height:15%;
+    background-color: rgb(247, 247, 103);
+    margin-bottom: 10px;
+}
+
+#nav-text {
+    margin-right:5%;
+}
+
+.project-htmls a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(39, 35, 35);
+    font-size: 28px;
+}
+.project-htmls a:hover {
+    color: rgba(255, 0, 0, 0.849);
+}
+  
+ 
 .project-htmls a:hover {
     color: rgba(255, 0, 0, 0.849);
 }
@@ -69,7 +79,8 @@ body {
     align-items: center;
     border-radius: 10px;
     border: 2px solid white;
-    margin-top: -1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     text-align: center;
     color: black;
 }
@@ -77,6 +88,8 @@ body {
 .search {
     line-height: 20px;
     height: 20px;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 #go-back {
