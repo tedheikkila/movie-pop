@@ -11,6 +11,11 @@ header {
    background-color: rgb(247, 247, 103);
    width: 95%;
    margin-left: 2%;
+   color: black;
+   margin: 10px;
+   padding: 10px;
+   text-indent: 5mm;
+   
 } 
 
 #movie-name {
@@ -32,14 +37,6 @@ form input[type=text]:hover {
     color:white
 } 
 
-
-.jumbotron {
-    color: black;
-    margin: 10px;
-    padding: 10px;
-    text-indent: 5mm;
-    margin-left: 2%;
-}
 
 body {
     box-sizing: border-box;
@@ -94,9 +91,9 @@ body {
     width: 80%; 
     overflow: hidden;
     align-items: center;
-    margin-right: 12%;
-    margin-left: 20%;
-    margin-top: -30%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0%;
     display: inline-flexbox;
 }
 
