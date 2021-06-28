@@ -23,16 +23,12 @@
     </header>
 
     <div class="flex-container">
-        <!--Holds both search area and the viewing area-->
-        <button id="go-back">Go Back to Homepage</button>
         <div class="search-container">
             <h2 class="search">Search by Movie Title: </h2>
 
             <form>
                 <input class="storage" type="text" id="movie-name" placeholder="ex. Titanic" />
                 <button class="button" id="search" class="button">Search</button>
-                <!-- <form action="http://www.youtube.com/results" method="get" target="_blank" >
-                        <input name="search_query" type="text" maxlength="130" /> -->
             </form>
         </div>
 
@@ -40,12 +36,7 @@
             <section>
                 <div class="img-container"></div>
                 <h2 class="click">Click on trailer below to start watching</h2>
-                    <!-- <fieldset>
-                        <legend>Previously Searched Movies</legend>
-                        <input class="text" type="text">
-                        <button class="btn" id="savedNames" class="btn"></button>
-                    </fieldset> -->
-                <iframe id="frame" width="420" height="365" src="https://www.youtube.com/embed/1xSYmg_kpMY"></iframe>
+                <div id="trailer-div"></div>
             </section>
         </main>
         
