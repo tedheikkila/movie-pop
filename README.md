@@ -52,6 +52,12 @@ Picks 1-5
 Picks 6-10
 <br>
 <img src = "./images/proj-7.png">
+Trailers
+<br>
+<img src = "./images/proj-8.png">
+Search result
+<br>
+<img src = "./images/proj-9.png">
 
 
 
