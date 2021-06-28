@@ -1,29 +1,60 @@
+* {
+    justify-content: center;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(39, 35, 35);
 }
 
 header {
-   background-color: rgba(255, 0, 0, 0.849);
+   background-color: rgb(247, 247, 103);
+   width: 95%;
+   margin-left: 2%;
+   /* color: black; */
+   margin: 10px;
+   padding: 10px;
+   text-indent: 5mm;
+   height:230px;
+   display: inline;
 } 
+navbar.hi {
 
-#search-btn {
-    background-color:rgba(255, 0, 0, 0.849);
-    border:none;
+
+    
 }
 
-#search-btn:hover {
+ul {
+    padding: 0;
+    /* list-style-type: none; */
+    /* text-decoration: none; */
+    color: rgb(39, 35, 35);
+    font-size: 28px;
+  
+}
+
+.project-htmls a:hover {
+    color: rgba(255, 0, 0, 0.849);
+}
+
+#movie-name {
+    background-color: white;
+    width: 20%;
+    color: black;
+}
+
+form input[type=text] {
+    background-color:rgb(247, 247, 103);
+    border:none;
+    font-size: 17px;
+    width: 75px;
+}
+
+form input[type=text]:hover {
     background-color: black;
     cursor: pointer;
     color:white
 } 
-
-.jumbotron {
-    color: whitesmoke;
-    margin: 20px;
-    padding: 10px;
-    text-indent: 5mm;
-}
 
 body {
     box-sizing: border-box;
@@ -37,18 +68,26 @@ body {
  }
 
 .search-container {
-    background-color: rgb(247, 247, 103);
+    background-color:rgba(255, 0, 0, 0.849);
     padding: 10px;
     align-items: center;
     border-radius: 10px;
-    border: 2px solid black;
-    margin-top: -2%;
+    border: 2px solid white;
+    margin-top: -1%;
     text-align: center;
+    color: black;
 }
 
 .search {
     line-height: 20px;
     height: 20px;
+}
+
+#go-back {
+    float: left;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(247, 247, 103);
 }
 
 .click {
@@ -61,15 +100,44 @@ body {
     text-align: center;
     overflow: hidden;
     color: white;
+    box-shadow: 2px 2px 10px;
+    margin-left: 2%;
 } 
 
-iframe {
+#frame {
     border: 3px solid black;
     width: 80%; 
-    height: auto;
     overflow: hidden;
     align-items: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 12%;
+    margin-left: 20%;
+    margin-top: 0%;
+    display: inline-flexbox;
+}
 
+fieldset {
+    width: 15%;
+    margin-left: 1%;
+    height: 300px;
+}
+
+legend {
+        background-color: #FFFFE0;
+        border: 1px solid #eceff1;
+        border-radius: 10px;
+        float:inline-start;
+        width: 80%;
+        margin-left: 1%;
+       
+}
+
+@media screen and (max-width: 600px) {
+    .flex-container, .img-container {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+    
 }
