@@ -1,44 +1,25 @@
 var imageContainer = document.querySelector(".img-container");
 let trailerObj = "";
-let moviInput = document.querySelector('#movie-name');
+let movieInput = document.querySelector('#movie-name');
 const searchBtn = document.querySelector(".button");
 const goBackBtn = document.querySelector('#go-back')
+let movieFrame = document.querySelector('#frame')
 
- // var requestUrl = "https://api.themoviedb.org/3/search/movie?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US&query=Ted&page=1&include_adult=false";
- var requestUrl = 'https://api.themoviedb.org/3/search/movie?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US&query=' + movieTyped + '&page=1&include_adult=false';
+// var requestUrl = "https://api.themoviedb.org/3/search/movie?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US&query=Ted&page=1&include_adult=false";
+//  var requestUrl = 'https://api.themoviedb.org/3/search/movie?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US&query=' + movieTyped + '&page=1&include_adult=false';
 
 // initiates when user clicks search buttons; validates input; gives user feedback for false values
-var movieFormHandler = function (event) {
+function movieFormHandler(event) {
     event.preventDefault();
     var movieTyped = movieInput.value.trim()
-      // request URL var
-      var requestUrl = 'https://api.themoviedb.org/3/search/movie?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US&query=' + movieTyped + '&page=1&include_adult=false';
-     
-      getmovieApi(requestUrl)
+    // request URL var
+    var requestUrl = 'https://api.themoviedb.org/3/search/movie?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US&query=' + movieTyped + '&page=1&include_adult=false';
 
-     
+    getmovieApi(requestUrl)
+
 }
 
 function getmovieApi(requestUrl) {
-    
-    fetch(requestUrl)
-    .then(function (response) {
-        return response.json();
-    })
-
-    .then(function (data) { 
-        console.log(data)
-
-
-    })
-}
-  
-
-
-function getMovieIDApi() {
-
-    var requestUrl = "https://api.themoviedb.org/3/movie/" + movieID + "/videos?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US";
-   
 
     fetch(requestUrl)
         .then(function (response) {
@@ -46,7 +27,26 @@ function getMovieIDApi() {
         })
 
         .then(function (data) {
-            console.log(data)
+            // console.log(data)
+
+            var movieID = data.results[0].id
+
+            getMovieIDApi(movieID)
+        })
+}
+
+
+function getMovieIDApi(movieID) {
+
+    var requestIDUrl = "https://api.themoviedb.org/3/movie/" + movieID + "/videos?api_key=d31824240499f82a818f5a74b293bc0d&language=en-US";
+
+    fetch(requestIDUrl)
+        .then(function (response) {
+            return response.json();
+        })
+
+        .then(function (data) {
+            // console.log(data)
 
             for (var i = 0; i < data.results.length; i++) {
                 //console.log(data.results[0])
@@ -55,21 +55,24 @@ function getMovieIDApi() {
 
                     getYoutubeLink(data.results[i].key);
                     break;
-
                 }
-
             }
         });
 }
 
 function getYoutubeLink(key) {
     console.log("youtube.com/watch?v=" + key);
+    var video = "youtube.com/watch?v=" + key;
+    // movieFrame.setAttribute('src', video)
+    // movieFrame.textContent = video
+    movieFrame.src = video;
+
 }
 
 searchBtn.addEventListener('click', movieFormHandler)
 
-function homepage (event) {
-    console.log(event)
+function homepage(event) {
+    // console.log(event)
     document.location.replace('../index.html');
 }
 

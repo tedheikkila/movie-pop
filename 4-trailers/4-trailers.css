@@ -11,7 +11,31 @@ header {
    background-color: rgb(247, 247, 103);
    width: 95%;
    margin-left: 2%;
+   /* color: black; */
+   margin: 10px;
+   padding: 10px;
+   text-indent: 5mm;
+   height:230px;
+   display: inline;
 } 
+navbar.hi {
+
+
+    
+}
+
+ul {
+    padding: 0;
+    /* list-style-type: none; */
+    /* text-decoration: none; */
+    color: rgb(39, 35, 35);
+    font-size: 28px;
+  
+}
+
+.project-htmls a:hover {
+    color: rgba(255, 0, 0, 0.849);
+}
 
 #movie-name {
     background-color: white;
@@ -31,15 +55,6 @@ form input[type=text]:hover {
     cursor: pointer;
     color:white
 } 
-
-
-.jumbotron {
-    color: black;
-    margin: 10px;
-    padding: 10px;
-    text-indent: 5mm;
-    margin-left: 2%;
-}
 
 body {
     box-sizing: border-box;
@@ -100,7 +115,6 @@ body {
     display: inline-flexbox;
 }
 
-
 fieldset {
     width: 15%;
     margin-left: 1%;
@@ -116,16 +130,6 @@ legend {
         margin-left: 1%;
        
 }
-/* 
-.img-container {
-    display: block;
-    clear: both;
-    content: " ";
-    margin-top: 30%;
-    } */
-/* .img-container {
-    display: block;
-} */
 
 @media screen and (max-width: 600px) {
     .flex-container, .img-container {
