@@ -58,7 +58,11 @@ movie shuffle output text area */
     border: 2px solid rgba(255, 0, 0, 0.849);
     border-radius: 10px;
     padding-top: 20px;
-  }
+}
+
+#popped-movie:hover {
+    border: solid 3px rgb(247, 247, 103)
+}
 
 /* main 1 */
 .card-title-one {
