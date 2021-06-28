@@ -17,18 +17,19 @@
     </nav>
 
     <div class="row justify-content-around">
-        <div class="col-2">
+        <div class="col-lg-3 col-md-12">
             <form class="form-group">
                 <input type="text" class="form-control-lg" placeholder="Ex. Ted" id="movie-search">
-                <button type="submit" class="btn btn-primary mb-2" id="search-button">Submit</button>
+                <button type="submit" class="btn btn-primary mb-2" id="search-button">Search!</button>
             </form>
+
+            <h2 class="body-text">Previously Searched Movies:</h2>
+            <div id="previous-searched-movies"></div>
         </div>
 
-        <div class="col-10">
+        <div class="col-lg-9 col-md-12">
             <h1 class="body-text" id="searched-movie"></h1>
-            <ul id="source-list">
-
-            </ul>
+            <ul id="source-list"></ul>
         </div>
     </div>
     <script src="3-locations.js"></script>
