@@ -43,8 +43,6 @@ function searchApi(searchUrl) {
             return response.json();
         })
         .then(function (data) {
-locations
-main
             try {
                 if (data.title_results.length == 0) {
                     searchedMovie.textContent = "Sorry, no movie came up with that name. Please make sure that the movie title is exactly correct in the search bar";
