@@ -54,29 +54,39 @@ imageContainer.addEventListener("click", function (event) {
 
 // localStorage.setItem("movieId", "myvalue");
 
-const movieNames = document.getElementById("movie-name");  //Input key
-// const movieInput = document.getElementById("movie-input"); //Input Value
-const searchBtn = document.getElementById("search");       //Button
-const savedNames = document.getElementById("savedNames");  //Local Storage Output
+const storageInput = document.querySelector(".storage");
+const text = document.querySelector(".text");
+const searchBtn = document.querySelector(".button");
+const savedNames = localStorage.getItem("textinput");  
 
-function createItem() {
-    // const key = movieNames.key;
-    // const value = movieInput.value;
-localStorage.setItem("movieName", Object());
-//     var data = localStorage.setItem(movieNames);
-//     if (savedNames.length === SEARCH_LIMIT) {
-//         savedNames.pop();
+if(storageInput) {
+    text.textContent = savedNames;
 }
 
-function readValue() {
-var x = localStorage.getItem("movieName");
-document.getElementById("savedNames").innerHTML = x;
+storageInput.addEventListener("input", inputEvent);
+text.textContent = inputEvent.target.value;
+
+
+const storeToLocal = () {
+    // const key = movieNames.key;
+    // const value = movieInput.value;
+    localStorage.setItem("input", text.textContent),
+    //     var data = localStorage.setItem(movieNames);
+        if (savedNames.length === SEARCH_LIMIT) {
+            savedNames.pop();
+
+    button.addEventListener("click", storeToLocal),
+});
+
+
+
+// function readValue() {
+// var x = localStorage.getItem("movieName");
+// document.querySelector("savedNames").innerHTML = x;
 
 // window.localStorage.getItem("movieName");
 // JSON.parse(window.localStorage.getItem("movieName"));
 
-// console.log(key);
-// console.log(value);
 
 // function goBackBtn()
 
@@ -85,7 +95,7 @@ var homepage = function (event) {
     console.log(event)
     document.location.replace('../index.html');
 }
- window.localStorage.clear();
+//  window.localStorage.clear();
 
 
 

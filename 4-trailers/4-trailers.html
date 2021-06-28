@@ -24,8 +24,8 @@
             <h2 class="search">Search by Movie Title: </h2>
 
             <form>
-                <input type="text" id="movie-name" placeholder="ex. Titanic" class="movie-input" />
-                <button onclick="creatItem()" id="search" class="btn">Search</button>
+                <input class="storage" type="text" id="movie-name" placeholder="ex. Titanic" />
+                <button class="button" id="search" class="button">Search</button>
                 <!-- <form action="http://www.youtube.com/results" method="get" target="_blank" >
                         <input name="search_query" type="text" maxlength="130" /> -->
                 <!-- <select name="movie-name"> -->
@@ -52,7 +52,8 @@
                     <fieldset>
                         <legend>Previously Searched Movies</legend>
                         <!--Saved output-->
-                        <button onclick="readValue()" id="savedNames"></button>
+                        <input class="text" type="text">
+                        <button class="btn" id="savedNames" class="btn"></button>
                     </fieldset>
                 <iframe id="frame" width="420" height="365" src="https://www.youtube.com/embed/1xSYmg_kpMY"></iframe>
             </section>
