@@ -19,6 +19,17 @@
     color:black
 }
 
+#clear-button {
+    background-color:rgba(255, 0, 0, 0.849);
+    border:none;
+}
+
+#clear-button:hover {
+    background-color: rgb(247, 247, 103);
+    cursor: pointer;
+    color:black
+}
+
 .body-text {
     color: white;
     text-align: center;
@@ -32,4 +43,22 @@
 
 .previous-movie {
     text-align: center;
+}
+
+#clear-button-div {
+    text-align: center;
+}
+
+.project-htmls a {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(39, 35, 35);
+    font-size: 28px;
+}
+.project-htmls a:hover {
+    color: rgba(255, 0, 0, 0.849);
+}
+
+.navbar h1 {
+    color: rgb(39, 35, 35);
 }
