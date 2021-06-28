@@ -210,7 +210,7 @@ function getSavedMovie() {
   var storedMovie = localStorage.getItem("save-movie");
   // on first page return, checks if value is null (no previous shuffle btn click events)
   if (storedMovie === null) {
-    poppedMovie.textContent = "";
+    poppedMovie.textContent = "movie pop";
   } else {
     poppedMovie.textContent = storedMovie;
   }
