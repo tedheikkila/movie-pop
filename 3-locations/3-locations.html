@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"/>
-    <link rel="stylesheet" type="text/css" href="3-locations.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" />
+    <link rel="stylesheet" type="text/css" href="3-locations.css" />
     <title>Locations</title>
 </head>
 
 <body>
+    <!-- This is the section for the Navbar -->
     <nav class="navbar navbar-light">
         <h1>Where to Watch</h1>
-
         <div class="justify-content-right project-htmls">
             <a href="../index.html">Homepage</a>
             <a href="../2-reviews/2-reviews.html">Critic's Picks</a>
@@ -23,6 +23,7 @@
     </nav>
 
     <div class="row justify-content-around">
+        <!-- This is the section for the search bar and previous searches -->
         <div class="col-lg-3 col-sm-12">
             <div class="row justify-content-center">
                 <form class="form-group">
@@ -30,7 +31,6 @@
                     <button type="submit" class="btn btn-primary mb-2" id="search-button">Search!</button>
                 </form>
             </div>
-
 
             <h2 class="body-text">Previously Searched Movies:</h2>
             <div id="previous-searched-movies"></div>
@@ -40,6 +40,7 @@
             </div>
         </div>
 
+        <!-- This is the section for the the list of streaming sources and text saying what movie you're looking at sources for -->
         <div class="col-lg-9 col-sm-12">
             <h1 class="body-text" id="searched-movie"></h1>
             <ul id="source-list"></ul>

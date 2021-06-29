@@ -1,5 +1,5 @@
 
-
+//...Sets variables for API 
 
 var button = document.getElementById('searchbtn');
 
@@ -10,13 +10,15 @@ var apiKey = '&api-key=2zOVysM67JvX3UMtLIhU2eAWk8V1i0m8';
 
 var apiUrl = api + apiKey;
 
+//.. Assigns button variables
+
 var button1 = document.getElementById("button1");
 var button2 = document.getElementById("button2");
 var button3 = document.getElementById("button3");
 var button4 = document.getElementById("button4");
 
 
-
+//.. Functions pulliing API data and initializing display functions
 
 function criticsPicks() {
     
@@ -79,6 +81,7 @@ function criticsPicksFour() {
 }
 
 
+//.. Functions to read, assign, and display API data
 
 function displayMovies(data) {
     for (var i = 0; i < 5; i++) {
@@ -208,6 +211,8 @@ function displayMoviesFour(data) {
 }
 }
 
+//.. Function to clear display of previous data
+
 
 function clearDisplay(moviesDisplay) {
 
@@ -219,6 +224,8 @@ function clearDisplay(moviesDisplay) {
 
 }
 
+//.. Event listeners to initiate clear display functions on each button
+
 
 button1.addEventListener("click", clearDisplay);
 button2.addEventListener("click", clearDisplay);
@@ -226,7 +233,7 @@ button3.addEventListener("click", clearDisplay);
 button4.addEventListener("click", clearDisplay);
 
 
-
+//.. Event listeners to initiate API pull functions on each button
 
 
 button1.addEventListener("click", criticsPicks);
