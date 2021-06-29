@@ -131,3 +131,10 @@ div {
 .buttonbar {
     margin-top: 10px;
 }
+
+/* media screen for yellow text */
+@media screen and (max-width: 900px) {
+    .bodytext {
+        margin-left: 10%;
+    }  
+}
