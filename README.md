@@ -19,9 +19,9 @@ Movie Pop was developed using HTML, Google Fonts, CSS, Bootstrap, Javascript, an
 App's Features:
 <br>
 Homepage: The homepage's main function is to direct the user to read reviews she/he is interested, check out movie trailers, or find where to watch a movie. It provides a suggested movie that is randomly generated from the top 20 popular movies on the TMDb database. For each click event the user is given a new movie recommendation. The "what's poppin'?" section displays trending movie information.<br><br>
-2. Reviews: Once in the reviews page the user can click different buttons that will display segments of top critically acclaimed movies. The user can read and see relevant images of the displayed movie titles. <br><br>
-3. Trailers: In this section, the user can search for any movie they'd like to and watch the relevant YouTube trailer for it. They can use their result from the movie shuffler or just type in something they're interested in. Note: the code for this application does function as expected, but YouTube sends back console log messages indicating their embedded URL was not used. This doesn't affect the application's performance. <br><br>
-4. Where to Watch: If the user is curious about a movie they'd like to see, she/he can use this page to see if Netflix, Disney+, etc. are streaming the particular movie. <br>
+Reviews: Once in the reviews page the user can click different buttons that will display segments of top critically acclaimed movies. The user can read and see relevant images of the displayed movie titles. <br><br>
+Trailers: In this section, the user can search for any movie they'd like to and watch the relevant YouTube trailer for it. They can use their result from the movie shuffler or just type in something they're interested in. Note: the code for this application does function as expected, but YouTube sends back console log messages indicating their embedded URL was not used. This doesn't affect the application's performance. <br><br>
+Where to Watch: If the user is curious about a movie they'd like to see, she/he can use this page to see if Netflix, Disney+, etc. are streaming the particular movie. After each search event, the typed in text is saved to local storage. This method allows the user to view their past searches. If the user wants to start fresh she/he can use the clear button to remove these previous searches from this page and local storage. <br>
 
 <br>
 Deployed Application URL:<br>
@@ -64,7 +64,9 @@ Where to Watch: searched movie output
 <img src = "./images/proj-11.png">
 <br>
 Where to Watch: previously searched movies
+<br>
 <img src = "./images/proj-12.png">
+<br>
 
 
 
