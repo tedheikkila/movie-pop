@@ -78,12 +78,30 @@
 }
 
 #text-output {
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
-/*media screen for proper flex */
+/*media screen for text output*/
 @media screen and (max-width: 800px) {
     #text-output {
       flex-direction: column;   
     }
 }    
+
+/*media screen for*/
+@media screen and (min-width: 900px) {
+    #search-area {
+      margin-top:3%;
+      margin-left:5%; 
+
+    }
+}    
+
+/*media screen for*/
+@media screen and (min-width: 900px) {
+    #search-button {
+      width:75%;
+      margin-top: 3%;
+    }
+} 
+
