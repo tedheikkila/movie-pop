@@ -31,13 +31,17 @@
     </nav>
     <!--search container-->
     <div class="flex-container">
-        <div class="search-container">
-            <h2 class="search">Search by Movie Title: </h2>
-            <form>
-                <input class="storage" type="text" id="movie-name" placeholder="ex. Titanic" />
-                <button class="button" id="search" class="button">Search</button>
-            </form>
+
+        <div class="input-group search-container">
+            <h2 class="search">Search by Movie Title:</h2>
+                <div class ="input-search">
+                    <input type="search" class="form-control rounded storage" id="movie-name" placeholder="ex. Titanic" aria-label="Search"
+                    aria-describedby="search-addon" />
+                </div>
+                    <button type="button" id="search" class="btn btn-outline-success">Search</button>
+                
         </div>
+
         <!---container for youtube url-->
         <main>
             <section>
