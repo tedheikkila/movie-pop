@@ -1,7 +1,9 @@
 * {
     justify-content: center;
+    box-sizing: border-box;
 }
 
+/* body */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(39, 35, 35);
@@ -28,12 +30,14 @@ h1 {
     margin-right:5%;
 }
 
+/* navbar a tags */
 .project-htmls a {
     padding: 10px;
     text-decoration: none;
     color: rgb(39, 35, 35);
     font-size: 28px;
 }
+
 .project-htmls a:hover {
     color: rgba(255, 0, 0, 0.849);
 }
@@ -43,12 +47,14 @@ h1 {
     color: rgba(255, 0, 0, 0.849);
 }
 
+/* place holder text for input */
 #movie-name {
     background-color: white;
     width: 20%;
     color: black;
 }
 
+/* input text area on form */
 form input[type=text] {
     background-color:rgb(247, 247, 103);
     border:none;
@@ -62,10 +68,6 @@ form input[type=text]:hover {
     color:white
 } 
 
-body {
-    box-sizing: border-box;
-}
-
 .flex-container {
     padding: 20px;
     justify-content: center;
@@ -73,6 +75,7 @@ body {
     justify-items: center;
  }
 
+ /* search container */
 .search-container {
     background-color:rgba(255, 0, 0, 0.849);
     padding: 10px;
@@ -99,6 +102,7 @@ body {
     color: rgb(247, 247, 103);
 }
 
+/* click area */
 .click {
     padding: 10px;
     align-items: center;
@@ -113,6 +117,7 @@ body {
     margin-left: 2%;
 } 
 
+/* youtube movie area */
 #frame {
     border: 3px solid black;
     width: 80%; 
@@ -136,10 +141,10 @@ legend {
         border-radius: 10px;
         float:inline-start;
         width: 80%;
-        margin-left: 1%;
-       
+        margin-left: 1%;     
 }
 
+/* media screen for youtube */
 @media screen and (max-width: 600px) {
     .flex-container, .img-container {
         float: none;
@@ -147,6 +152,5 @@ legend {
         width: 100%;
         margin: 0;
         padding: 15px;
-    }
-    
+    }  
 }
