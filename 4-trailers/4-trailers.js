@@ -63,8 +63,9 @@ function displayTrailer(trailerUrl) {
     trailerDiv.innerHTML = "";
     let newIframe = document.createElement("iframe");
     newIframe.setAttribute("width", "620");
-    newIframe.setAttribute("height", "565");
+    newIframe.setAttribute("height", "400");
     newIframe.setAttribute("src", trailerUrl);
+    newIframe.style.borderRadius = "20px"
     trailerDiv.appendChild(newIframe);
 }
 

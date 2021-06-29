@@ -7,6 +7,7 @@
 .navbar {
     background-color: rgb(247, 247, 103);
     padding: 5%;
+    border-bottom: solid white 15px;
 }
 
 .search-container {

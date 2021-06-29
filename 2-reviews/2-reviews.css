@@ -111,6 +111,7 @@ div {
     height:15%;
     background-color: rgb(247, 247, 103);
     margin-bottom: 10px;
+    border-bottom: solid white 15px;
 }
 
 #nav-text {
