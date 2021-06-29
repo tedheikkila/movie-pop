@@ -1,15 +1,27 @@
 * body {
     font-family: 'Poppins', sans-serif;
     background-color: rgb(39, 35, 35);
+    text-align: center;
 }
 
 .navbar {
     background-color: rgb(247, 247, 103);
+    padding: 5%;
+}
+
+.search-container {
+    text-align: center;
+}
+
+#search-area {
+    margin-top:5%;
 }
 
 #search-button {
     background-color:rgba(255, 0, 0, 0.849);
     border:none;
+    padding-top: 9px;
+    padding-bottom: 12px;
 }
 
 #search-button:hover {
@@ -21,6 +33,7 @@
 #clear-button {
     background-color:rgba(255, 0, 0, 0.849);
     border:none;
+    margin-top: 3%;
 }
 
 #clear-button:hover {
@@ -32,6 +45,7 @@
 .body-text {
     color: white;
     text-align: center;
+    margin-top: 3%;
 }
 
 #source-list {
@@ -54,6 +68,7 @@
     color: rgb(39, 35, 35);
     font-size: 28px;
 }
+
 .project-htmls a:hover {
     color: rgba(255, 0, 0, 0.849);
 }
@@ -61,3 +76,14 @@
 .navbar h1 {
     color: rgb(39, 35, 35);
 }
+
+#text-output {
+    margin-top: 5%;
+}
+
+/*media screen for proper flex */
+@media screen and (max-width: 800px) {
+    #text-output {
+      flex-direction: column;   
+    }
+}    
