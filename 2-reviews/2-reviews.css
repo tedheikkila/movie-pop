@@ -71,6 +71,7 @@ div {
     margin-right:20%;
     margin-top: 5%;
     width:60%;
+    margin-bottom:2%
 }
 
 #button1, #button2, #button3, #button4 {
@@ -129,4 +130,11 @@ div {
 
 .buttonbar {
     margin-top: 10px;
+}
+
+/* media screen for yellow text */
+@media screen and (max-width: 900px) {
+    .bodytext {
+        margin-left: 10%;
+    }  
 }

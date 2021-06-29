@@ -17,17 +17,17 @@
         <h1>Where to Watch</h1>
         <div class="justify-content-right project-htmls">
             <a href="../index.html">Homepage</a>
-            <a href="../2-reviews/2-reviews.html">Reviews</a>
-            <a href="../4-trailers/4-trailers.html">Trailer</a>
+            <a href="../2-reviews/2-reviews.html">Critic's Picks</a>
+            <a href="../4-trailers/4-trailers.html">Trailers</a>
         </div>
     </nav>
 
-    <div class="row justify-content-around">
+    <div class="search-container row justify-content-between">
         <!-- This is the section for the search bar and previous searches -->
-        <div class="col-lg-3 col-sm-12">
+        <div class="col-lg-3 col-sm-12" id = "search-area">
             <div class="row justify-content-center">
                 <form class="form-group">
-                    <input type="text" class="form-control-lg" placeholder="Ex. Ted" id="movie-search">
+                    <input type="text" class="form-control-lg" placeholder="ex. Ted" id="movie-search">
                     <button type="submit" class="btn btn-primary mb-2" id="search-button">Search!</button>
                 </form>
             </div>
@@ -41,11 +41,17 @@
         </div>
 
         <!-- This is the section for the the list of streaming sources and text saying what movie you're looking at sources for -->
-        <div class="col-lg-9 col-sm-12">
+        <div class="col-lg-8 col-sm-12" id="text-output">
             <h1 class="body-text" id="searched-movie"></h1>
             <ul id="source-list"></ul>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
     <script src="3-locations.js"></script>
 </body>
 

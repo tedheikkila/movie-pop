@@ -4,7 +4,7 @@
 var imageContainer = document.querySelector(".img-container");
 let trailerObj = "";
 let movieInput = document.querySelector('#movie-name');
-const searchBtn = document.querySelector(".button");
+const searchBtn = document.querySelector("#search");
 const goBackBtn = document.querySelector('#go-back');
 let trailerDiv = document.getElementById("trailer-div");
 

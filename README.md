@@ -8,20 +8,20 @@ Group 2 Members: Lillian, Zach, Josh, Ted
 <br>
 Description:
 <br>
-The objective of the application, Movie Pop, is to function as a one-stop shop for all things movies. Whether that's getting a popular movie recommendation, seeing what's currently trending, reading top reviewed movies, watching trailers, or finding where to watch a particular movie. Movie Pop accomplishes all of the previously mentioned items without any hassle. It is great for the casual movie browser or an avid movie fanatic. Movie Pop is also suited well for group settings like parties. It is designed to function as both a PC and mobile application. <br>
+The objective of the application, Movie Pop, is to function as a one-stop shop for all things movies. Whether that's getting a popular movie recommendation, seeing what's currently trending, reading top reviewed movies, watching trailers, or finding where to watch a particular movie. Movie Pop accomplishes all of the previously mentioned items without the hassle. It is great for the casual movie browser or an avid movie fanatic. Movie Pop is also suited well for group settings like parties. It is designed to function as both a PC and mobile application. <br>
 
 <br>
 Technologies Used:
 <br>
-Movie Pop was developed using HTML, Google Fonts, CSS, Bootstrap, Javascript, and three server-side APIs. The three different server-side APIs were: The Movie Database (TMDb) for the homepage and trailers files, NYT Reviews for the top-rated reviews files, and Watch Mode for the where to watch files. For best results on PC, please render using Chrome. <br>
+Movie Pop was developed using HTML, Google Fonts, CSS, Bootstrap, Javascript, and three server-side APIs. The three different server-side APIs were: The Movie Database (TMDb) for the homepage and trailers files, NYT Movie Reviews for the top-rated reviews files, and Watchmode for the where to watch files. For best results on PC, please render using Chrome. <br>
 
 <br>
-Breakdown:
+App's Features:
 <br>
-1. Homepage: Upon loading Movie Pop, the user is brought to the homepage. The homepage's main function is to direct the user to read reviews she/he is interested, check out movie trailers, or find where to watch a specific movie. It also provides a suggested movie that is randomly generated from the top 20 popular movies on the TMDb database. Each click event the user is given a new movie recommendation. The "what's poppin'?" section displays the top 5 trending movies and artists as well as the top 5 popular movies.<br>
-2. Reviews: Once in the reviews page the user can click different buttons that will display segments of the top rated movies. There she/he can read and see relevant images of the displayed movie titles. The user can use what they've learned from reading the reviews then start searching and watching movie trailers for ones that looked interesting. <br>
-3. Trailers: In this section, the user can search for any movie they'd like to and watch the relevant YouTube trailer for it. They can use their result from the movie shuffler or just type in any movie they're interested in checking out. Note: the code for this application does function as expected, but YouTube sends back console log messages indicating their embedded URL was not used. This doesn't affect the application's performance. <br>
-4. Where to Watch: Finally, once the user decides upon a movie they'd like to see, she/he can use this section to see if Netflix, Disney+, etc. are streaming the particular movie. If not, they can return to the homepage and generate another movie recommendation or keep browsing trailers. An additional note that along with the "where to watch" page, the reviews and trailers pages also have the ability for the user to return to the homepage. <br>
+Homepage: The homepage's main function is to direct the user to read reviews she/he is interested, check out movie trailers, or find where to watch a movie. It provides a suggested movie that is randomly generated from the top 20 popular movies on the TMDb database. For each click event the user is given a new movie recommendation. The "what's poppin'?" section displays trending movie information.<br><br>
+2. Reviews: Once in the reviews page the user can click different buttons that will display segments of top critically acclaimed movies. The user can read and see relevant images of the displayed movie titles. <br><br>
+3. Trailers: In this section, the user can search for any movie they'd like to and watch the relevant YouTube trailer for it. They can use their result from the movie shuffler or just type in something they're interested in. Note: the code for this application does function as expected, but YouTube sends back console log messages indicating their embedded URL was not used. This doesn't affect the application's performance. <br><br>
+4. Where to Watch: If the user is curious about a movie they'd like to see, she/he can use this page to see if Netflix, Disney+, etc. are streaming the particular movie. <br>
 
 <br>
 Deployed Application URL:<br>
@@ -30,34 +30,41 @@ Check out the deployed application here >>  https://tedheikkila.github.io/movie-
 <br>
 Screenshots:
 <br>
-Homepage
-<br>
+Homepage: movie shuffler feature
 <img src = "./images/proj-1.png">
-movie shuffler
 <br>
+Homepage: 3 main pages of Movie Pop
 <img src = "./images/proj-2.png">
 <br>
-what's poppin?
-<br>
+Homepage: what's popping?
 <img src = "./images/proj-3.png">
-Hot (Trending) Movies, Pop (Popular) Movies, and Hot (Trending) Artists
 <br>
+Homepage: output for movie shuffler
 <img src = "./images/proj-4.png">
-Reviews
 <br>
+Homepage: output for what's poppin'?
 <img src = "./images/proj-5.png">
-Picks 1-5
 <br>
+Critic's Picks
 <img src = "./images/proj-6.png">
-Picks 6-10
 <br>
+Critic's Picks: Picks 1-5
 <img src = "./images/proj-7.png">
+<br>
 Trailers
-<br>
 <img src = "./images/proj-8.png">
-Search result
 <br>
+Trailers: searched movie output
 <img src = "./images/proj-9.png">
+<br>
+Where to Watch
+<img src = "./images/proj-10.png">
+<br>
+Where to Watch: searched movie output
+<img src = "./images/proj-11.png">
+<br>
+Where to Watch: previously searched movies
+<img src = "./images/proj-12.png">
 
 
 
