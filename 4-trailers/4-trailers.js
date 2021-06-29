@@ -62,8 +62,8 @@ function getYoutubeLink(key) {
 function displayTrailer(trailerUrl) {
     trailerDiv.innerHTML = "";
     let newIframe = document.createElement("iframe");
-    newIframe.setAttribute("width", "420");
-    newIframe.setAttribute("height", "365");
+    newIframe.setAttribute("width", "620");
+    newIframe.setAttribute("height", "565");
     newIframe.setAttribute("src", trailerUrl);
     trailerDiv.appendChild(newIframe);
 }
